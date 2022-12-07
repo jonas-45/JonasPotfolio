@@ -69,9 +69,10 @@ nav a {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
-  margin: 15px;
+  margin: 15px 40px 15px 5px;
   color: #172b4d;
-  padding-left: 20px;
+  padding-left: 10px;
+  padding-right: 20px;
 }
 
 .bio {
