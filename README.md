@@ -1,9 +1,6 @@
 <a name="readme-top"></a>
 <div align="center">
 
-  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
-  <br/>
-
   <h3><b>My Potfolio (Microverse Task)</b></h3>
 
 </div>
@@ -18,6 +15,7 @@
 - [💻 Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Usage](#usage)
+- [Future Features](#future-features)
 - [👥 Authors](#authors)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
@@ -52,6 +50,12 @@ Get the repositor url from above and clone it to your desired folder using
 To run the project, click on the index.html to open it on any browser of your choice.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!--Future features -->
+## Future features <a name="future-features"></a>
+.Contact form will be added
+.Desktop version will be added
+.Details modal will be added in the future
 
 <!-- AUTHORS -->
 
