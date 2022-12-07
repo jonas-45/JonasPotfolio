@@ -47,6 +47,10 @@ nav h2 {
   line-height: 20px;
 }
 
+nav a {
+  cursor: pointer;
+}
+
 .header-section {
   display: flex;
   height: 587px;
