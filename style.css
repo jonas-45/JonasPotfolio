@@ -39,7 +39,7 @@ nav h2 {
   list-style: none;
   text-decoration: none;
   color: #6070ff;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 1,5rem;
@@ -87,7 +87,7 @@ nav h2 {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  color: #7F8CFF;
+  color: #7f8Cff;
   margin: 0px 15px 15px 15px;
   justify-content: flex-start;
 }
