@@ -64,11 +64,7 @@ To run the project, click on the index.html to open it on any browser of your ch
 - LinkedIn: [jonas-wullah](https://linkedin.com/in/jonas-wullah)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 <!-- CONTRIBUTING -->
-
 ## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
