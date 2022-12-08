@@ -130,8 +130,8 @@ nav a {
   align-items: flex-start;
   padding: 16px;
   gap: 12px;
-  background: #FFFFFF;
-  border: 1px solid #DFE1E6;
+  background: #fff;
+  border: 1px solid #dfe1e6;
   border-radius: 16px;
 }
 
@@ -226,7 +226,7 @@ nav a {
   left: 0;
   margin-top: 10px;
   margin-bottom: 15px;
-  border: 1px solid #6070FF;
+  border: 1px solid #6070ff;
   border-radius: 8px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -234,7 +234,7 @@ nav a {
   font-size: 17px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: #396DF2;
+  color: #396df2;
   background-color: #fff;
   cursor: pointer;
 }
@@ -266,7 +266,7 @@ nav a {
   left: 0;
   margin-top: 15px;
   margin-bottom: 15px;
-  border: 1px solid #6070FF;
+  border: 1px solid #6070ff;
   border-radius: 8px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -274,7 +274,7 @@ nav a {
   font-size: 17px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: #396DF2;
+  color: #396df2;
   background-color: #fff;
   cursor: pointer;
 }
@@ -328,7 +328,7 @@ nav a {
   display: flex;
   width: 303px;
   height: 67px;
-  background: #F7F7F9;
+  background: #f7f7f9;
   border-radius: 8px;
   align-items: center;
   padding-left: 15px;
@@ -368,13 +368,13 @@ nav a {
 }
 
 .contact-me p {
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
   text-align: center;
-  color: #EBEBFF;
+  color: #ebebff;
   margin: 15px;
   padding: 10px;
 }
@@ -416,15 +416,15 @@ nav a {
 }
 
 .see-project-btn:hover {
-  background: #6070FF;
-  box-shadow: 0px 8px 16px rgba(64, 83, 252, 0.24);
+  background: #6070ff;
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
   border-radius: 8px;
   color: #fff;
   letter-spacing: 0.03em;
 }
 
 .see-project-btn:active {
-  background: #2230D2;
+  background: #2230d2;
   border-radius: 8px;
   color: #fff;
 }
