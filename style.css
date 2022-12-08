@@ -220,6 +220,18 @@ nav a {
   padding: 3px 17px;
 }
 
+.languages li span {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  color: #253858;
+  margin-left: 20px;
+}
+
 .web-technologies ul li span {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -331,18 +343,6 @@ nav a {
   display: flex;
   flex-direction: column;
   row-gap: 10px;
-}
-
-.languages li span {
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
-  display: flex;
-  align-items: center;
-  color: #253858;
-  margin-left: 20px;
 }
 
 .contact-me {
