@@ -208,8 +208,8 @@ nav a {
 }
 
 .web-technologies ul {
-  display: flex;
-  justify-content: flex-start;
+  /* display: flex; 
+  justify-content: flex-start; */
   align-items: center;
   column-gap: 12px;
 }
@@ -226,8 +226,8 @@ nav a {
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
-  display: flex;
-  align-items: center;
+  /* display: flex;
+  align-items: center; */
   color: #253858;
   margin-left: 20px;
 }
@@ -426,4 +426,9 @@ nav a {
   background: #2230d2;
   border-radius: 8px;
   color: #fff;
+}
+
+.tech {
+  float: left;
+  margin-right: 15px;
 }
