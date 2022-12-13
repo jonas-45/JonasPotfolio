@@ -13,6 +13,20 @@ body {
   background-color: #e5e5e5;
 }
 
+.status-bar {
+  display: block;
+}
+
+@media screen and (min-width: 800px) {
+  body{
+    width: 100%;
+  }
+
+  .status-bar {
+    display: none;
+  }
+}
+
 h2 {
   text-decoration: none;
 }
@@ -25,6 +39,16 @@ h2 {
   background-size: contain;
 }
 
+@media screen and (min-width: 800px) {
+  .container {
+    width: 100%;
+    height: auto;
+    background-image: url("images/headerbg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
 .app-bar {
   background-color: #fff;
 }
@@ -34,6 +58,36 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 15px 8%;
+}
+
+.desktop-menu {
+  display: none;
+}
+
+.desktop-menu ul li{
+  display: inline;
+  margin-right: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #344563;
+  cursor: pointer;
+}
+
+.mobile-menu-icon {
+  display: block;
+}
+
+@media screen and (min-width: 800px) {
+  .mobile-menu-icon {
+    display: none;
+  }
+
+  .desktop-menu {
+    display: block;
+  }
 }
 
 nav h2 {
