@@ -233,8 +233,18 @@ nav a {
   width: 100%;
   display: grid;
   gap: 88px;
-  padding: 114px 80px;
+  padding: 114px 24px;
 }
+
+@media screen and (min-width: 768px) {
+  .works-section {
+    width: 100%;
+    display: grid;
+    padding: 114px 80px;
+  }
+}
+
+
 
 .works-card {
   display: flex;
@@ -259,11 +269,32 @@ nav a {
     border: 1px solid #dfe1e6;
     border-radius: 16px;
   }
+
+  .works-card:nth-child(even) {
+    display: flex;
+    flex-direction: row-reverse;
+  }
 }
 
 .card-top {
   width: 295px;
   height: 220px;
+}
+
+#card1 {
+  background-image: url(./images/card1.png);
+}
+
+#card2 {
+  background-image: url(./images/card2.png);
+}
+
+#card3 {
+  background-image: url(./images/card3.png);
+}
+
+#card4 {
+  background-image: url(./images/card4.png);
 }
 
 @media screen and (min-width: 768px) {
@@ -274,7 +305,30 @@ nav a {
 
   .card-bottom {
     width: 100%;
-    height: 220px;
+    height: 448px;
+    padding: 20px;
+  }
+
+  #card1 {
+    background-image: url(./images/desktop-card1.png);
+  }
+
+  #card2 {
+    background-image: url(./images/desktop-card2.png);
+  }
+
+  #card3 {
+    background-image: url(./images/desktop-card3.png);
+  }
+
+  #card4 {
+    background-image: url(./images/desktop-card4.png);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card2-description {
+    fon
   }
 }
 
@@ -299,6 +353,18 @@ nav a {
   font-size: 2.2rem;
   line-height: 44px;
   color: #172b4d;
+}
+
+@media screen and (min-width: 768px) {
+  .article h1 {
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.2rem;
+    line-height: 52px;
+    color: #172b4d;
+  }
 }
 
 .card-categories ul {
@@ -336,13 +402,70 @@ nav a {
   color: #344563;
 }
 
+.desktop-title {
+  display: none;
+}
+
+.desktop-subtitle {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-title {
+    display: none;
+  }
+  
+  .mobile-subtitle {
+    display: none;
+  }
+
+  .desktop-title {
+    display: block;
+  }
+
+  .desktop-subtitle {
+    display: list-item;
+  }
+
+  .card-categories .desktop-subtitle {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #344563;
+  }
+}
+
 .work-description {
+  display: block;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 1rem;
   line-height: 24px;
   color: #344563;
+}
+
+.work-description-desktop {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .work-description {
+    display: none;
+    
+  }
+  
+  .work-description-desktop {
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 24px;
+    color: #344563;
+  }
 }
 
 .web-technologies ul {
@@ -384,7 +507,7 @@ nav a {
   width: 124px;
   height: 48px;
   left: 0;
-  margin-top: 10px;
+  margin-top: 30px;
   margin-bottom: 15px;
   border: 1px solid #6070ff;
   border-radius: 8px;
