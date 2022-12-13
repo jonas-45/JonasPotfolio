@@ -44,7 +44,7 @@ h2 {
 }
 
 @media screen and (min-width: 800px) {
-  .container {
+  .header {
     width: 100%;
     height: auto;
     background-image: url("images/headerbg.png");
