@@ -167,13 +167,13 @@ nav a {
   }
 }
 
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
   .title-end::after {
     content: "/a";
     white-space: pre;
 
   }
-}
+} */
 
 
 .bio {
@@ -233,7 +233,7 @@ nav a {
   width: 100%;
   display: grid;
   gap: 88px;
-  padding: 114px 24px;
+  padding: 114px 80px;
 }
 
 .works-card {
@@ -248,10 +248,34 @@ nav a {
   border-radius: 16px;
 }
 
+@media screen and (min-width: 768px) {
+  .works-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    padding: 16px;
+    background: #fff;
+    border: 1px solid #dfe1e6;
+    border-radius: 16px;
+  }
+}
 
 .card-top {
   width: 295px;
   height: 220px;
+}
+
+@media screen and (min-width: 768px) {
+  .card-top {
+    width: 100%;
+    height: 448px;
+  }
+
+  .card-bottom {
+    width: 100%;
+    height: 220px;
+  }
 }
 
 .card-top img {
