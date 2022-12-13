@@ -17,7 +17,7 @@ body {
   display: block;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 768px) {
   body{
     width: 100%;
   }
@@ -45,7 +45,7 @@ h2 {
   background-color: #fff;*/
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 768px) {
   .header {
     width: 100%;
     height: auto;
@@ -60,7 +60,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 8%;
+  padding: 30px 8% 60px 8%;
 }
 
 .desktop-menu {
@@ -83,13 +83,14 @@ nav {
   display: block;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 768px) {
   .mobile-menu-icon {
     display: none;
   }
 
   .desktop-menu {
     display: block;
+    margin-right: 30px;
   }
 }
 
@@ -115,25 +116,24 @@ nav a {
   padding: 10px;
   background-image: url("images/desktop-header-bg.png");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-size: contain;
   background-color: #fff;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 768px) {
   .header-section {
     display: flex;
     width: 100%;
-    height: auto;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
     flex-direction: column;
-    padding: 10px;
     background-image: url("images/desktop-header-bg.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    margin-top: 20px;
-    padding: 500px 500px 10px 500px;
-    border-radius: 0 0 0 200px;
+    padding: 250px 220px 250px 220px;
+    border-radius: 0 0 0 100px;
     background-color: #fff;
   }
 }
@@ -149,24 +149,32 @@ nav a {
   line-height: 52px;
   margin: 15px 40px 15px 5px;
   color: #172b4d;
-  padding: 150px 20px 10px 10px;
+  padding: 30px 60px 10px 10px;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 768px) {
   .title {
-    width: 327px;
+    width: auto;
     flex-wrap: wrap;
     justify-content: center;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 40px;
-    line-height: 52px;
-    margin: 5px 10px 10px 10px;
+    font-size: 48px;
+    line-height: 50px;
     color: #172b4d;
-    padding: 10px 20px 10px 10px;
+    padding: 30px 20px 10px 10px;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .title-end::after {
+    content: "/a";
+    white-space: pre;
+
+  }
+}
+
 
 .bio {
   justify-content: center;
@@ -178,6 +186,21 @@ nav a {
   line-height: 24px;
   color: #344563;
   margin: 0 15px 15px 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .bio {
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #344563;
+    margin: 0 15px 15px 15px;
+    padding-right: 100px;
+  }
 }
 
 .social-media {
@@ -224,6 +247,7 @@ nav a {
   border: 1px solid #dfe1e6;
   border-radius: 16px;
 }
+
 
 .card-top {
   width: 295px;
