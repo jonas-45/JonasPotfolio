@@ -55,7 +55,6 @@ To run the project, click on the index.html to open it on any browser of your ch
 ## Future features <a name="future-features"></a>
 .Desktop version will be added
 .Details modal will be added in the future
-.forms and buttons will be updated to submit information to server
 
 <!-- AUTHORS -->
 
