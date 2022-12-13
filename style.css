@@ -38,18 +38,18 @@ h2 {
 .header {
   width: 375px;
   height: 718px;
-  background-image: url("images/headerbg.png");
+  /* background-image: url("images/headerbg.png");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+  background-position: center; */
+  background-color: #fff;
 }
 
 @media screen and (min-width: 800px) {
   .header {
     width: 100%;
     height: auto;
-    background-image: url("images/headerbg.png");
-    background-repeat: no-repeat;
-    background-size: contain;
+    background-color: #fff;
   }
 }
 
@@ -114,7 +114,26 @@ nav a {
   height: 587px;
   flex-direction: column;
   padding: 10px;
-  margin-top: 90px;
+  background-image: url("images/desktop-header-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media screen and (min-width: 800px) {
+  .header-section {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    padding: 10px;
+    background-image: url("images/desktop-header-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid goldenrod;
+    margin-top: 20px;
+  }
 }
 
 .title {
@@ -128,8 +147,23 @@ nav a {
   line-height: 52px;
   margin: 15px 40px 15px 5px;
   color: #172b4d;
-  padding-left: 10px;
-  padding-right: 20px;
+  padding: 150px 20px 10px 10px;
+}
+
+@media screen and (min-width: 800px) {
+  .title {
+    width: 327px;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    margin: 15px 40px 15px 5px;
+    color: #172b4d;
+    padding: 150px 20px 10px 10px;
+  }
 }
 
 .bio {
