@@ -41,15 +41,14 @@ h2 {
   /* background-image: url("images/headerbg.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center; */
-  background-color: #fff;
+  background-position: center; 
+  background-color: #fff;*/
 }
 
 @media screen and (min-width: 800px) {
   .header {
     width: 100%;
     height: auto;
-    background-color: #fff;
   }
 }
 
@@ -118,6 +117,7 @@ nav a {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-color: #fff;
 }
 
 @media screen and (min-width: 800px) {
@@ -129,10 +129,12 @@ nav a {
     padding: 10px;
     background-image: url("images/desktop-header-bg.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
-    border: 1px solid goldenrod;
     margin-top: 20px;
+    padding: 500px 500px 10px 500px;
+    border-radius: 0 0 0 200px;
+    background-color: #fff;
   }
 }
 
@@ -160,9 +162,9 @@ nav a {
     font-weight: 700;
     font-size: 40px;
     line-height: 52px;
-    margin: 15px 40px 15px 5px;
+    margin: 5px 10px 10px 10px;
     color: #172b4d;
-    padding: 150px 20px 10px 10px;
+    padding: 10px 20px 10px 10px;
   }
 }
 
