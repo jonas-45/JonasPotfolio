@@ -32,12 +32,13 @@
         </div>
 
         <section class="header-section">
+          <div class="header-container">
             <h1 class="title">I'm Jonas <br>Glad to see <span class="title-end">you</span></h1>
-            <p class="bio">I’m a software developer! I can help you build a product , 
+            <p class="header-bio">I’m a software developer! I can help you build a product , 
                 feature or website Look through some of my work and 
                 experience! If you like what you see and have a project 
                 you need coded, don’t hestiate to contact me.</p>
-            <p class="social-title">LET'S CONNECT</p>
+            <p class="let-connect">LET'S CONNECT</p>
             <div class="social-media">
                 <ul>
                     <li>
@@ -67,6 +68,8 @@
                     </li>
                 </ul>
             </div>
+          </div>
+            
         </section>
       </header>
 
@@ -321,9 +324,9 @@
               <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
 
               <form action="https://formspree.io/f/xdojqvpa" method="POST">
-                <input type="text" name="username" placeholder="Enter your name" class="input" value="Wullah Jonas"><br>
-                <input type="email" name="email" placeholder="Enter email address" class="input" value="wullahjonas@gmail.com"><br>
-                <textarea name="message" id="" cols="30" rows="10" placeholder="Write your message here" class="input textarea"></textarea>
+                <input type="text" name="username" placeholder="Enter your name" class="input" maxlength="30" required /><br>
+                <input type="email" name="email" placeholder="Enter email address" class="input" maxlength="30" required /><br>
+                <textarea name="message" id="" cols="30" rows="10" placeholder="Write your message here" class="input textarea" maxlength="500" required></textarea>
 
                 <input type="submit" value="Get In Touch" class="see-project-btn get-in-touch">
 
