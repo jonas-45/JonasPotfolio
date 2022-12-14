@@ -170,16 +170,6 @@ nav a {
   align-items: center;
 }
 
-.languages li {
-  display: flex;
-  width: 303px;
-  height: 67px;
-  background: #f7f7f9;
-  border-radius: 8px;
-  align-items: center;
-  padding-left: 15px;
-}
-
 .card-categories ul li {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
