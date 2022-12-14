@@ -333,6 +333,10 @@ nav a {
   border-radius: 16px;
 }
 
+.ruby{
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   .works-card {
     display: flex;
@@ -349,6 +353,10 @@ nav a {
   .works-card:nth-child(even) {
     display: flex;
     flex-direction: row-reverse;
+  }
+
+  .ruby{
+    display: list-item;
   }
 }
 
