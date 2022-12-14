@@ -154,6 +154,22 @@ nav a {
 
 @media screen and (min-width: 768px) {
   .title {
+    width: 327px;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    margin: 15px 40px 15px 5px;
+    color: #091E42;
+    padding: 30px 60px 10px 10px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .title {
     width: auto;
     flex-wrap: wrap;
     justify-content: center;
@@ -241,6 +257,7 @@ nav a {
     width: 100%;
     display: grid;
     padding: 114px 80px;
+    justify-content: center;
   }
 }
 
@@ -251,7 +268,7 @@ nav a {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: 16px;
+  padding: 25px;
   gap: 12px;
   background: #fff;
   border: 1px solid #dfe1e6;
@@ -260,14 +277,16 @@ nav a {
 
 @media screen and (min-width: 768px) {
   .works-card {
+    width: 1156px;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-wrap: nowrap;
-    padding: 16px;
+    padding: 25px;
     background: #fff;
     border: 1px solid #dfe1e6;
     border-radius: 16px;
+    margin: 40px 70px;
   }
 
   .works-card:nth-child(even) {
@@ -283,18 +302,26 @@ nav a {
 
 #card1 {
   background-image: url(./images/card1.png);
+  background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #card2 {
   background-image: url(./images/card2.png);
+  background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #card3 {
   background-image: url(./images/card3.png);
+  background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #card4 {
   background-image: url(./images/card4.png);
+  background-repeat: no-repeat;
+    background-size: cover;
 }
 
 @media screen and (min-width: 768px) {
@@ -311,26 +338,38 @@ nav a {
 
   #card1 {
     background-image: url(./images/desktop-card1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
   }
 
   #card2 {
     background-image: url(./images/desktop-card2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
   }
 
   #card3 {
     background-image: url(./images/desktop-card3.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
   }
 
   #card4 {
     background-image: url(./images/desktop-card4.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
   }
 }
 
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
   .card2-description {
-    fon
+    
   }
-}
+} */
 
 .card-top img {
   width: 100%;
@@ -529,6 +568,42 @@ nav a {
   margin-top: 50px;
   background-color: #fff;
   border-radius: 0 80px 0 0;
+}
+
+.about-me-top {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .about-me {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 100px 80px 100px 10px;
+    margin-top: 50px;
+    background-color: #fff;
+    border-radius: 0 80px 0 0;
+  }
+
+  .about-me-description {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #344563;
+    padding-right: 2px;
+    margin: 2px;
+  }
+
+  .about-me-top {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 447px;
+    padding: 0px;
+  }
 }
 
 .about-social-media ul {
