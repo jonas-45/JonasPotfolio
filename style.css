@@ -463,8 +463,28 @@ nav a {
   color: #172b4d;
 }
 
+.article .title-text {
+  width: 295px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.2rem;
+  line-height: 44px;
+  color: #172b4d;
+}
+
 @media screen and (min-width: 768px) {
   .article h1 {
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.2rem;
+    line-height: 52px;
+    color: #172b4d;
+  }
+
+  .article .title-text  {
     width: 100%;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
@@ -887,6 +907,16 @@ nav a {
 }
 
 .contact-items h1 {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  color: #fff;
+}
+
+.contact-items .title-text {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
