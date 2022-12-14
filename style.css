@@ -261,8 +261,6 @@ nav a {
   }
 }
 
-
-
 .works-card {
   display: flex;
   flex-direction: column;
@@ -277,7 +275,6 @@ nav a {
 
 @media screen and (min-width: 768px) {
   .works-card {
-    width: 1156px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -327,12 +324,12 @@ nav a {
 @media screen and (min-width: 768px) {
   .card-top {
     width: 100%;
-    height: 448px;
+    min-height: 448px;
   }
 
   .card-bottom {
     width: 100%;
-    height: 448px;
+    min-height: 448px;
     padding: 20px;
   }
 
@@ -579,11 +576,11 @@ nav a {
   .about-me {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    padding: 100px 80px 100px 10px;
+    justify-content: flex-start;
     margin-top: 50px;
     background-color: #fff;
     border-radius: 0 80px 0 0;
+    padding-left: 250px;
   }
 
   .about-me-description {
