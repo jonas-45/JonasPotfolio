@@ -8,7 +8,7 @@
   scroll-behavior: smooth;
 }
 
-a{
+a {
   cursor: pointer;
 }
 
@@ -23,7 +23,7 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  body{
+  body {
     width: 100%;
   }
 
@@ -51,7 +51,6 @@ h2 {
     width: 100%;
     background-color: #f5f5f5;
   }
-  
   .header {
     width: 100%;
     height: auto;
@@ -73,7 +72,17 @@ nav {
   display: none;
 }
 
-.desktop-menu ul li{
+.languages li {
+  display: flex;
+  width: 303px;
+  height: 67px;
+  background: #f7f7f9;
+  border-radius: 8px;
+  align-items: center;
+  padding-left: 15px;
+}
+
+.desktop-menu ul li {
   display: inline;
   margin-right: 20px;
   font-family: 'Poppins', sans-serif;
@@ -333,7 +342,7 @@ nav a {
   border-radius: 16px;
 }
 
-.ruby{
+.ruby {
   display: none;
 }
 
@@ -355,7 +364,7 @@ nav a {
     flex-direction: row-reverse;
   }
 
-  .ruby{
+  .ruby {
     display: list-item;
   }
 }
@@ -368,25 +377,25 @@ nav a {
 #card1 {
   background-image: url(./images/card1.png);
   background-repeat: no-repeat;
-    background-size: cover;
+  background-size: cover;
 }
 
 #card2 {
   background-image: url(./images/card2.png);
   background-repeat: no-repeat;
-    background-size: cover;
+  background-size: cover;
 }
 
 #card3 {
   background-image: url(./images/card3.png);
   background-repeat: no-repeat;
-    background-size: cover;
+  background-size: cover;
 }
 
 #card4 {
   background-image: url(./images/card4.png);
   background-repeat: no-repeat;
-    background-size: cover;
+  background-size: cover;
 }
 
 @media screen and (min-width: 768px) {
@@ -478,16 +487,6 @@ nav a {
   align-items: center;
 }
 
-.languages li {
-  display: flex;
-  width: 303px;
-  height: 67px;
-  background: #f7f7f9;
-  border-radius: 8px;
-  align-items: center;
-  padding-left: 15px;
-}
-
 @media screen and (min-width: 768px) {
   .languages li {
     display: flex;
@@ -532,7 +531,6 @@ nav a {
   .mobile-title {
     display: none;
   }
-  
   .mobile-subtitle {
     display: none;
   }
@@ -546,7 +544,7 @@ nav a {
   }
 
   .card-categories .desktop-subtitle {
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -572,9 +570,8 @@ nav a {
 @media screen and (min-width: 768px) {
   .work-description {
     display: none;
-    
   }
-  
+
   .work-description-desktop {
     display: block;
     font-family: 'Poppins', sans-serif;
@@ -664,7 +661,7 @@ nav a {
   border-radius: 0 80px 0 0;
 }
 
-.about-me-container{
+.about-me-container {
   display: flex;
   flex-direction: column;
 }
@@ -684,7 +681,7 @@ nav a {
   font-size: 40px;
   line-height: 52px;
   margin: 15px 40px 15px 5px;
-  color: #091E42;
+  color: #091e42;
   padding: 30px 60px 10px 10px;
 }
 
@@ -700,7 +697,7 @@ nav a {
     border-radius: 0 80px 0 0;
   }
 
-  .about-me-container{
+  .about-me-container {
     width: 72%;
     display: flex;
     flex-direction: row;
@@ -708,7 +705,7 @@ nav a {
   }
 
   .about-me-description {
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 1rem;
@@ -723,7 +720,7 @@ nav a {
     flex-direction: column;
     align-items: flex-start;
     width: 40%;
-    padding: 0px;
+    padding: 0;
   }
 
   .about-me-title {
@@ -735,7 +732,7 @@ nav a {
     font-weight: 700;
     font-size: 40px;
     line-height: 52px;
-    color: #091E42;
+    color: #091e42;
     margin-left: 0;
     padding: 20px 60px 10px 0;
   }
@@ -779,11 +776,6 @@ nav a {
 .expertise-categories {
   padding: 30px 10px 10px 10px;
 }
-
-.expertise-categories ul {
-  
-}
-
 .expertise {
   display: flex;
   flex-direction: column;
@@ -799,12 +791,12 @@ nav a {
     padding: 30px 10px 10px 10px;
     margin-left: 15px;
   }
+
   .expertise {
     display: flex;
     flex-direction: column;
     row-gap: 20px;
-  }
-  
+  }  
   .expertise-categories ul li > div {
     display: flex;
     flex-direction: row;
@@ -879,11 +871,10 @@ nav a {
     justify-content: center;
     align-items: center;
     background-image: url("images/contact-me-bg.png");
-    background-color: #6070FF;
+    background-color: #6070ff;
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 100px;
-    justify-content: center;
     border-radius: 130px 0 0 0;
   }
 
