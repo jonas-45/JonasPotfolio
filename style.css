@@ -501,6 +501,20 @@ nav a {
   align-items: center;
 }
 
+@media screen and (min-width: 768px) {
+  .languages li {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 122px;
+    height: 120px;
+    background: #f7f7f9;
+    border-radius: 8px;
+    padding: 10px;
+  }
+}
+
 .card-categories ul li {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
