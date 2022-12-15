@@ -17,19 +17,28 @@
             <div class="status-bar"><img alt="status bar" src="images/statusbar.png"></div>
             <nav>
                 <a href="index.html"><h2>Jonas</h2></a>
-                <div>
+                <div class="mobile-menu-icon">
                     <a><img alt="overflow-image" src="images/icon_menu_img.png"></a>
+                </div>
+
+                <div class="desktop-menu">
+                  <ul>
+                    <li><a href="#portfolio">Potfolio</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a> </li>
+                  </ul>
                 </div>
             </nav>
         </div>
 
         <section class="header-section">
-            <h1 class="title">I'm Jonas <br>Glad to see you</h1>
-            <p class="bio">I’m a software developer! I can help you build a product , 
+          <div class="header-container">
+            <h1 class="title">I'm Jonas <br>Glad to see <span class="title-end">you</span></h1>
+            <p class="header-bio">I’m a software developer! I can help you build a product , 
                 feature or website Look through some of my work and 
                 experience! If you like what you see and have a project 
                 you need coded, don’t hestiate to contact me.</p>
-            <p class="social-title">LET'S CONNECT</p>
+            <p class="let-connect">LET'S CONNECT</p>
             <div class="social-media">
                 <ul>
                     <li>
@@ -59,245 +68,282 @@
                     </li>
                 </ul>
             </div>
+          </div>
+            
         </section>
       </header>
 
       <div class="main">
-        <section class="works-section">
+        <section class="works-section" id="portfolio">
           <div class="works-card">
-            <div class="card-top">
-              <img alt="works1-image" src="images/card1.png">
+            <div class="card-top" id="card1">
+              
             </div>
-            
-            <article class="article">
-              <h1>Tonic</h1>
-              <div class="card-categories">
-                <ul>
-                  <li>Canopy</li>
-                  <li><img src="images/counter.png" alt="counter image"></li>
-                  <li><span>Back End Dev</span></li>
-                  <li><img src="images/counter.png" alt="counter image"></li>
-                  <li><span>2015</span></li>
-                </ul>
-              </div>
 
-              <p class="work-description"> A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
-
-              <div class="web-technologies">
-                <ul>
-                  <li><span>html</span></li>
-                  <li><span>css</span></li>
-                  <li><span>javascript</span></li>
-                </ul>
-              </div>
-            </article>
-
-            <button class="see-project-btn">See Project</button>
+            <div class="card-bottom">
+              <article class="article">
+                <h2 class="title-text mobile-title">Tonic</h2>
+                <h2 class="title-text desktop-title">Tonic</h2>
+                <div class="card-categories">
+                  <ul>
+                    <li class="mobile-subtitle">Canopy</li>
+                    <li class="desktop-subtitle">CANOPY</li>
+                    <li><img src="images/counter.png" alt="counter image"></li>
+                    <li><span>Back End Dev</span></li>
+                    <li><img src="images/counter.png" alt="counter image"></li>
+                    <li><span>2015</span></li>
+                  </ul>
+                </div>
+  
+                <p class="work-description"> A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
+                <p class="work-description-desktop"> A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
+  
+                <div class="web-technologies">
+                  <ul>
+                    <li><span>html</span></li>
+                    <li><span>css</span></li>
+                    <li><span>javascript</span></li>
+                  </ul>
+                </div>
+              </article>
+  
+              <button class="see-project-btn">See Project</button>
+            </div>
             
           </div>
           
           <div class="works-card">
-            <div class="card-top">
-              <img alt="works1-image" src="images/card2.png">
+            <div class="card-top" id="card2">
+              <!-- <img alt="works2-image" src="images/card2.png" id="card2"> -->
             </div>
-            
-            <article class="article">
-              <h1>Multi-Post Stories</h1>
-              <div class="card-categories">
-                <ul>
-                  <li>Canopy</li>
-                  <li><img src="images/counter.png" alt="counter image"></li>
-                  <li><span>Back End Dev</span></li>
-                  <li><img src="images/counter.png" alt="counter image"></li>
-                  <li><span>2015</span></li>
-                </ul>
-              </div>
 
-              <p class="work-description"> A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
-
-              <div class="web-technologies">
-                <ul>
-                  <li><span>html</span></li>
-                  <li><span>css</span></li>
-                  <li><span>javascript</span></li>
-                </ul>
-              </div>
-            </article>
-
-            <button class="see-project-btn">See Project</button>
+            <div class="card-bottom">
+              <article class="article">
+                <h2 class="title-text mobile-title">Multi-Post Stories</h2>
+                <h2 class="title-text desktop-title">Multi-Post Stories</h2>
+                <div class="card-categories">
+                  <ul>
+                    <li class="mobile-subtitle">Canopy</li>
+                    <li class="desktop-subtitle">FACEBOOK</li>
+                    <li><img src="images/counter.png" alt="counter image"></li>
+                    <li><span>Back End Dev</span></li>
+                    <li><img src="images/counter.png" alt="counter image"></li>
+                    <li><span>2015</span></li>
+                  </ul>
+                </div>
+  
+                <p class="work-description"> A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
+                <p class="work-description-desktop"> Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.</p>
+  
+                <div class="web-technologies">
+                  <ul>
+                    <li><span>html</span></li>
+                    <li class="ruby"><span>Ruby on rails</span></li>
+                    <li><span>css</span></li>
+                    <li><span>javascript</span></li>
+                  </ul>
+                </div>
+              </article>
+  
+              <button class="see-project-btn">See Project</button>
+            </div>
+          
           </div>
 
           <div class="works-card">
-            <div class="card-top">
-              <img alt="works1-image" src="images/card3.png">
+            <div class="card-top" id="card3">
+              <!-- <img alt="works3-image" src="images/card3.png" id="card3"> -->
+            </div>
+
+            <div class="card-bottom">
+              <article class="article">
+                <h2 class="title-text mobile-title">Tonic</h2>
+                <h2 class="title-text desktop-title">Facebook 360</h2>
+                <div class="card-categories">
+                  <ul>
+                    <li class="mobile-subtitle">Canopy</li>
+                    <li class="desktop-subtitle">FACEBOOK</li>
+                    <li><img src="images/counter.png" alt="counter image"></li>
+                    <li><span>Back End Dev</span></li>
+                    <li><img src="images/counter.png" alt="counter image"></li>
+                    <li><span>2015</span></li>
+                  </ul>
+                </div>
+  
+                <p class="work-description"> A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
+                <p class="work-description-desktop"> Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.</p>
+  
+                <div class="web-technologies">
+                  <ul>
+                    <li><span>html</span></li>
+                    <li class="ruby"><span>Ruby on rails</span></li>
+                    <li><span>css</span></li>
+                    <li><span>javascript</span></li>
+                  </ul>
+                </div>
+              </article>
+  
+              <button class="see-project-btn">See Project</button>
             </div>
             
-            <article class="article">
-              <h1>Tonic</h1>
-              <div class="card-categories">
-                <ul>
-                  <li>Canopy</li>
-                  <li><img src="images/counter.png" alt="counter image"></li>
-                  <li><span>Back End Dev</span></li>
-                  <li><img src="images/counter.png" alt="counter image"></li>
-                  <li><span>2015</span></li>
-                </ul>
-              </div>
-
-              <p class="work-description"> A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
-
-              <div class="web-technologies">
-                <ul>
-                  <li><span>html</span></li>
-                  <li><span>css</span></li>
-                  <li><span>javascript</span></li>
-                </ul>
-              </div>
-            </article>
-
-            <button class="see-project-btn">See Project</button>
           </div>
 
           <div class="works-card">
-            <div class="card-top">
-              <img alt="works1-image" src="images/card4.png">
+            <div class="card-top" id="card4">
+              <!-- <img alt="works4-image" src="images/card4.png" id="card4"> -->
+            </div>
+
+            <div class="card-bottom">
+              <article class="article">
+                <h2 class="title-text mobile-title">Multi-Post Stories</h2>
+                <h2 class="title-text desktop-title">Uber Navigation</h2>
+                <div class="card-categories">
+                  <ul>
+                    <li class="mobile-subtitle">Canopy</li>
+                    <li class="desktop-subtitle">Uber</li>
+                    <li><img src="images/counter.png" alt="counter image"></li>
+                    <li><span>Back End Dev</span></li>
+                    <li><img src="images/counter.png" alt="counter image"></li>
+                    <li><span>2015</span></li>
+                  </ul>
+                </div>
+  
+                <p class="work-description"> A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
+                <p class="work-description-desktop"> A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.</p>
+  
+                <div class="web-technologies">
+                  <ul>
+                    <li><span>html</span></li>
+                    <li class="ruby"><span>Ruby on rails</span></li>
+                    <li><span>css</span></li>
+                    <li><span>javascript</span></li>
+                  </ul>
+                </div>
+              </article>
+  
+              <button class="see-project-btn">See Project</button>
             </div>
             
-            <article class="article">
-              <h1>Multi-Post Stories</h1>
-              <div class="card-categories">
-                <ul>
-                  <li>Canopy</li>
-                  <li><img src="images/counter.png" alt="counter image"></li>
-                  <li><span>Back End Dev</span></li>
-                  <li><img src="images/counter.png" alt="counter image"></li>
-                  <li><span>2015</span></li>
-                </ul>
-              </div>
-
-              <p class="work-description"> A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
-
-              <div class="web-technologies">
-                <ul>
-                  <li><span>html</span></li>
-                  <li><span>css</span></li>
-                  <li><span>javascript</span></li>
-                </ul>
-              </div>
-            </article>
-
-            <button class="see-project-btn">See Project</button>
           </div>
 
         </section>
 
-        <section class="about-me">
-          <h1 class="title">About <br>Myself</h1>
-            <p class="bio">I’m a software developer! I can help you build a product , 
-                feature or website Look through some of my work and 
-                experience! If you like what you see and have a project 
-                you need coded, don’t hestiate to contact me.</p>
-            <p class="social-title">LET'S CONNECT</p>
-            <div class="about-social-media">
-                <ul>
-                    <li>
-                        <a href="https://twitter.com/jonaswullah" target="_self">
-                            <img src="images/twitter.svg" alt="twitter handle">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://linkedin.com/in/jonas-wullah" target="_self">
-                            <img src="images/linkedin.svg" alt="linkedin handle">
-                        </a>
-                    </li>
-                    <li>
+        <section class="about-me" id="about">
+          <div class="about-me-container">
+            <div class="about-me-top">
+              <h3 class=" title-text about-me-title">About <br>Myself</h3>
+              <p class="about-me-description bio">I’m a software developer! I can help you build a product , 
+                  feature or website Look through some of my work and 
+                  experience! If you like what you see and have a project 
+                  you need coded, don’t hestiate to contact me.</p>
+              <p class="social-title">LET'S CONNECT</p>
+              <div class="about-social-media">
+                  <ul>
+                      <li>
+                          <a href="https://twitter.com/jonaswullah" target="_self">
+                              <img src="images/twitter.svg" alt="twitter handle">
+                          </a>
+                      </li>
+                      <li>
+                          <a href="https://linkedin.com/in/jonas-wullah" target="_self">
+                              <img src="images/linkedin.svg" alt="linkedin handle">
+                          </a>
+                      </li>
+                      <li>
+                          <a href="#" target="_self">
+                              <img src="images/medium.svg" alt="medium handle">
+                          </a>
+                      </li>
+                      <li>
                         <a href="#" target="_self">
-                            <img src="images/medium.svg" alt="medium handle">
+                            <img src="images/social4.svg" alt="social handle">
                         </a>
                     </li>
-                    <li>
-                      <a href="#" target="_self">
-                          <img src="images/social4.svg" alt="social handle">
-                      </a>
+                      <li>
+                          <a href="#" target="_self">
+                              <img src="images/angellist.svg" alt="angellist handle">
+                          </a>
+                      </li>
+                  </ul>
+              </div>
+  
+              <button class="resume-btn see-project-btn">Get my resume</button>
+            </div>
+  
+              <div class="expertise-categories">
+                <ul class="expertise">
+                  <li>
+                    <div class="areas-category">
+                      <p>Languages</p>
+                      <img class="arrow" src="images/down-arrow.png" alt="down arrow">
+                    </div>
+                    
+                      <ul class="languages">
+                        <li>
+                          <img src="images/javascript.png" alt="javascript icon">
+                          <span>Javascript</span>
+                        </li>
+                        <li>
+                          <img src="images/html.png" alt="html icon">
+                          <span>HTML</span>
+                        </li>
+                        <li>
+                          <img src="images/css.png" alt="css icon">
+                          <span>CSS</span>
+                        </li>
+                      </ul>
                   </li>
-                    <li>
-                        <a href="#" target="_self">
-                            <img src="images/angellist.svg" alt="angellist handle">
-                        </a>
-                    </li>
+  
+                  <li>
+                    <div class="areas-category">
+                      <p>Frameworks</p>
+                      <img class="arrow" src="images/right-arrow.png" alt="right arrow">
+                    </div>
+                    
+                  </li>
+  
+                  <img src="images/separator-bottom.png" alt="separator line">
+  
+                  <li>
+                    <div class="areas-category">
+                      <p>Skills</p>
+                      <img class="arrow" src="images/right-arrow.png" alt="right arrow">
+                    </div>
+                    
+                  </li>
+  
+                  <img src="images/separator-bottom.png" alt="separator line">
+  
                 </ul>
-            </div>
-
-            <button class="resume-btn">Get my resume</button>
-
-            <div class="expertise-categories">
-              <ul>
-                <li>
-                  <div class="areas-category">
-                    <p>Languages</p>
-                    <img src="images/down-arrow.png" alt="down arrow">
-                  </div>
-                  
-                    <ul class="languages">
-                      <li>
-                        <img src="images/javascript.png" alt="javascript icon">
-                        <span>Javascript</span>
-                      <li>
-                        <img src="images/html.png" alt="html icon">
-                        <span>HTML</span>
-                      </li>
-                      <li>
-                        <img src="images/css.png" alt="css icon">
-                        <span>CSS</span>
-                      </li>
-                    </ul>
-                </li>
-
-                <li>
-                  <div class="areas-category">
-                    <p>Frameworks</p>
-                    <img src="images/right-arrow.png" alt="right arrow">
-                  </div>
-                  
-                </li>
-
-                <img src="images/separator-bottom.png" alt="separator line">
-
-                <li>
-                  <div class="areas-category">
-                    <p>Skills</p>
-                    <img src="images/right-arrow.png" alt="right arrow">
-                  </div>
-                  
-                </li>
-
-                <img src="images/separator-bottom.png" alt="separator line">
-
-              </ul>
-            </div>
-
-        </section>
-
-        <section class="contact-me">
-          <h1>Contact me</h1>
-          <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
-
-          <form>
-            <input type="text" name="username" placeholder="Enter your name" class="input"><br>
-            <input type="email" name="email" placeholder="Enter email address" class="input"><br>
-            <textarea name="message" id="" cols="30" rows="10" placeholder="Write your message here" class="input textarea"></textarea>
-
-            <input type="submit" value="Get In Touch" class="see-project-btn get-in-touch">
-
-          </form>
-          
-          <div class="bottom-shape">
-            <img src="images/button-shape.png" alt="bottom-home-shape">
+              </div>
           </div>
 
         </section>
 
-        
+        <section class="contact-me" id="contact">
+          <div class="contact-me-container">
+            <div class="contact-items">
+              <h3 class="title-text">Contact me</h3>
+              <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
+
+              <form action="https://formspree.io/f/xdojqvpa" method="POST">
+                <input type="text" name="username" placeholder="Enter your name" class="input" maxlength="30" required /><br>
+                <input type="email" name="email" placeholder="Enter email address" class="input" maxlength="30" required /><br>
+                <textarea name="message" id="" cols="30" rows="10" placeholder="Write your message here" class="input textarea" maxlength="500" required></textarea>
+
+                <input type="submit" value="Get In Touch" class="see-project-btn get-in-touch">
+
+              </form>
+              
+              <div class="bottom-shape">
+                <img src="images/button-shape.png" alt="bottom-home-shape">
+              </div>
+            </div>
+
+          </div>
+
+        </section>
+ 
       </div>
         
     </div>
