@@ -144,11 +144,12 @@ nav a {
 }
 
 .logo-text {
-  transition: font-size 1s;
+  animation: spin 3s;
 }
 
-.logo-text:hover {
-  font-size: 30px;
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }
 
 .header-section {
