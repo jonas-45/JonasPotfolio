@@ -93,7 +93,7 @@ nav {
   line-height: 20px;
   color: #344563;
   cursor: pointer;
-} 
+}
 
 .menu-item {
   font-family: 'Poppins', sans-serif;
@@ -216,7 +216,6 @@ nav a {
 .title:hover {
   transform: translateX(100%);
 }
-
 
 @media screen and (min-width: 768px) {
   .title {
