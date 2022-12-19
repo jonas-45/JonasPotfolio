@@ -47,7 +47,10 @@ Get the repositor url from above and clone it to your desired folder using
  >git clone <repository url>
 ### Usage
 
-To run the project, click on the index.html to open it on any browser of your choice.
+Visit the website using the link https://jonas-45.github.io/JonasPotfolio/
+
+### Deployment
+This project can be deployed using Github pages. Click https://jonas-45.github.io/JonasPotfolio/ to visit the website hosted on Github pages.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
