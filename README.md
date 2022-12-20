@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 <div align="center">
 
-  <h3><b>My Potfolio (Microverse Task)</b></h3>
+  <h3><b>My Potfolio</b></h3>
 
 </div>
 
@@ -24,7 +24,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Hello Microverse <a name="about-project"></a>
+# 📖 My Portfolio <a name="about-project"></a>
 
 My Potfolio is a project aimed at sharpening the skills in developing a mobile screen responsive web applications. This Microverse task trains the developer to develop applications not only for desktop but also apps that can be viewed on even smaller screens with great user experience
 
