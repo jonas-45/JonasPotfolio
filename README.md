@@ -11,7 +11,7 @@
 
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
-
+- [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Usage](#usage)
@@ -26,11 +26,19 @@
 
 # 📖 Hello Microverse <a name="about-project"></a>
 
-My Potfolio is a project aimed at sharpening the skills in developing a mobile screen responsive web applications. This Microverse task trains the developer to develop applications not only for desktop but also apps that can be viewed on even smaller screens with great user experience
+My Potfolio is a project aimed at sharpening the skills in developing a mobile screen responsive web applications. This Microverse task trains the developer to develop applications not only for desktop but also apps that can be viewed on even smaller screens with great user experience. This (<a href="https://www.loom.com/share/178a25875ce94fdc88ec80a83c7cb863"> link</a>) gives a video update of the project.
 
 ## 🛠 Built With <a name="built-with">Build With</a>
  >Html
  >Css
+
+ ## 🚀 Live Demo <a name="live-demo"></a>
+
+> Please find below a link to the live demo of the project
+
+- [Live Demo Link](https://jonas-45.github.io/JonasPotfolio/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 
@@ -48,9 +56,6 @@ Get the repositor url from above and clone it to your desired folder using
 ### Usage
 
 Visit the website using the link https://jonas-45.github.io/JonasPotfolio/
-
-### Deployment
-This project can be deployed using Github pages. Click https://jonas-45.github.io/JonasPotfolio/ to visit the website hosted on Github pages.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
