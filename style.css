@@ -413,25 +413,25 @@ nav a {
 }
 
 #card1 {
-  background-image: url(./images/card1.png);
+  /* background-image: url(./images/card1.png); */
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 #card2 {
-  background-image: url(./images/card2.png);
+  /* background-image: url(./images/card2.png); */
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 #card3 {
-  background-image: url(./images/card3.png);
+  /* background-image: url(./images/card3.png); */
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 #card4 {
-  background-image: url(./images/card4.png);
+  /* background-image: url(./images/card4.png); */
   background-repeat: no-repeat;
   background-size: cover;
 }
