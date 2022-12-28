@@ -41,6 +41,7 @@ body {
   background-color: #6070FF;
   padding: 10px;
   opacity: 0.75;
+  z-index: 99;
 }
 
 @media screen and (min-width: 768px) {
@@ -1128,5 +1129,35 @@ nav a {
 .see-project-btn:active {
   background: #2230d2;
   border-radius: 8px;
+  color: #fff;
+}
+
+.fab-container {
+  display: none;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  cursor: pointer;
+  z-index: 80;
+}
+
+.iconButton {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  box-shadow: 5px 5px 2px #444;
+}
+
+.button {
+  width: 60px;
+  height: 60px;
+  background:#A11692;
+}
+
+.iconButton i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
   color: #fff;
 }
