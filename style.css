@@ -70,6 +70,7 @@ body {
   padding-left: 30px;
 }
 .mobile-menu-item {
+  display: block;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
@@ -84,6 +85,13 @@ body {
 
 .mobile-menu-item a {
   color: #fff;
+}
+
+.bottom-black-line {
+  position: fixed;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 h2 {
