@@ -354,14 +354,15 @@ nav a {
   justify-content: center;
   gap: 88px;
   padding: 114px 24px;
+  
 }
 
 @media screen and (min-width: 768px) {
   .works-section {
-    width: 100%;
     display: grid;
-    padding: 114px 80px;
+    grid-template-columns: 80%;
     justify-content: center;
+    align-items: center;
   }
 }
 
@@ -389,9 +390,11 @@ nav a {
 
 @media screen and (min-width: 768px) {
   .works-card {
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     flex-wrap: nowrap;
     padding: 25px;
     background: #fff;
@@ -452,28 +455,28 @@ nav a {
   }
 
   #card1 {
-    background-image: url(./images/desktop-card1.png);
+    /* background-image: url(./images/desktop-card1.png); */
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
   }
 
   #card2 {
-    background-image: url(./images/desktop-card2.png);
+    /* background-image: url(./images/desktop-card2.png); */
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
   }
 
   #card3 {
-    background-image: url(./images/desktop-card3.png);
+    /* background-image: url(./images/desktop-card3.png); */
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
   }
 
   #card4 {
-    background-image: url(./images/desktop-card4.png);
+    /* background-image: url(./images/desktop-card4.png); */
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -574,30 +577,7 @@ nav a {
   color: #344563;
 }
 
-.desktop-title {
-  display: none;
-}
-
-.desktop-subtitle {
-  display: none;
-}
-
 @media screen and (min-width: 768px) {
-  .mobile-title {
-    display: none;
-  }
-
-  .mobile-subtitle {
-    display: none;
-  }
-
-  .desktop-title {
-    display: block;
-  }
-
-  .desktop-subtitle {
-    display: list-item;
-  }
 
   .card-categories .desktop-subtitle {
     font-family: 'Poppins', sans-serif;
@@ -617,26 +597,6 @@ nav a {
   font-size: 1rem;
   line-height: 24px;
   color: #344563;
-}
-
-.work-description-desktop {
-  display: none;
-}
-
-@media screen and (min-width: 768px) {
-  .work-description {
-    display: none;
-  }
-
-  .work-description-desktop {
-    display: block;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 24px;
-    color: #344563;
-  }
 }
 
 .web-technologies ul {
@@ -1089,6 +1049,12 @@ nav a {
   transform: translate(-50%);
 }
 
+.stop-scroll {
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%);
+}
+
 .popup-statusbar {
   display: block;
 }
@@ -1099,9 +1065,7 @@ nav a {
 @media screen and (min-width: 768px) {
   .mobile-popup {
     width: 100%;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    display: none;
+    padding: 1% 20%;
     opacity: 0.99;
     z-index: 90;
     background-image: url("./images/overlay_desktop.png");
@@ -1124,6 +1088,26 @@ nav a {
   flex-flow: column wrap;
   justify-content: flex-start;
   align-items: flex-start;
+  gap: 12px;
+  background: #fff;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-popup-card {
+    display: flex;
+    padding: 25px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 12px;
+    background: #fff;
+    border: 1px solid #dfe1e6;
+    border-radius: 20px;
+  }
 }
 
 .card-image {
@@ -1132,16 +1116,61 @@ nav a {
   justify-content: center;
 }
 
-.m-popup-separator-line {
+@media screen and (min-width: 768px) {
+  .card-image {
+    width: 100%;
+    height: 586px;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .work-description-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+
+  .popup-description {
+    flex-basis: 70%;
+  }
+
+  .p-technologies {
+    display: flex;
+    flex-basis: 30%;
+    flex-wrap: wrap;
+  }
+}
+
+.popup-separator-line {
   width: 303px;
   margin-top: 20px;
   border: 1px solid #EBECF0;
 }
 
-.m-popup-top {
+.popup-top {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .popup-top {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.popup-title {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.2rem;
+  line-height: 52px;
+  color: #172b4d;
 }
 
 .popup-buttons {
