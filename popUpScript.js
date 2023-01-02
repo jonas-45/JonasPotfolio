@@ -46,6 +46,11 @@ let dot_img = "./images/counter.png";
 ProjectsData.forEach((project,index) => {
   let project_card_image = document.createElement("img");
   project_card_image.src = project.image_url;
+  //project_card_image.classList.add("imgfill");
+  //project_card_image.style.height = "448px";
+  //card_img[index].style.backgroundImage = "url(" + project.image_url + ")";
+  
+  
 
   card_img[index].appendChild(project_card_image);
   titles[index].innerHTML = project["title"];
@@ -275,7 +280,7 @@ function showProjectDetailsPopUp(project_Data){
   let description = "description";
   let tags = "technologies";
 
-  //let body = document.querySelector("body");
+  let body = document.querySelector("body");
   let popup_window = document.querySelector(".mobile-popup");
   let popup_card_image = document.querySelector(".card-image");
   let popup_close = document.querySelector(".popup-close");
@@ -290,7 +295,7 @@ function showProjectDetailsPopUp(project_Data){
   popup_close.style.cursor = "pointer";
   popup_close.addEventListener("click", function(event){
   popup_window.classList.remove("show-popup");
-    //body.classList.remove("stop-scroll");
+  body.classList.remove("stop-scroll");
   });
 
   //reset image, subtitles and technology tags to empty
@@ -340,5 +345,6 @@ function showProjectDetailsPopUp(project_Data){
   popup_card_image.appendChild(card_image);
   
   //show the popup
+  body.classList.add("stop-scroll");
   popup_window.classList.add("show-popup");
 }

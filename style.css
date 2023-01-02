@@ -39,13 +39,13 @@ h2 {
 }
 
 .container {
-  width: 375px;
+  width: 100%;
   background-color: #f5f5f5;
   position: relative;
 }
 
 .header {
-  width: 375px;
+  width: 100%;
   height: 718px;
 }
 
@@ -165,6 +165,7 @@ nav a {
   background-repeat: no-repeat;
   background-size: contain;
   background-color: #fff;
+  border-radius: 0 0 0 80px;
 }
 
 .header-container {
@@ -348,21 +349,30 @@ nav a {
   margin-left: 15px;
 }
 
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .works-section {
   width: 100%;
   display: grid;
   justify-content: center;
   gap: 88px;
   padding: 114px 24px;
-  
 }
 
 @media screen and (min-width: 768px) {
   .works-section {
     display: grid;
-    grid-template-columns: 80%;
+    width: 70%;
     justify-content: center;
     align-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  
   }
 }
 
@@ -372,7 +382,6 @@ nav a {
   justify-content: center;
   align-items: flex-start;
   padding: 25px;
-  gap: 12px;
   background: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
@@ -390,17 +399,15 @@ nav a {
 
 @media screen and (min-width: 768px) {
   .works-card {
-    width: 100%;
     display: flex;
+    height: auto;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: nowrap;
     padding: 25px;
     background: #fff;
     border: 1px solid #dfe1e6;
     border-radius: 20px;
-    margin: 40px 70px;
   }
 
   .works-card:nth-child(even) {
@@ -414,8 +421,9 @@ nav a {
 }
 
 .card-top {
-  width: 295px;
-  height: 220px;
+  width: 100%;
+  min-height: 220px;
+  max-height: 350px;
 }
 
 #card1 {
@@ -444,17 +452,21 @@ nav a {
 
 @media screen and (min-width: 768px) {
   .card-top {
+    display: flex;
     width: 100%;
-    min-height: 448px;
+    justify-content: center;
+    align-items: center;
+    height: 448px;
   }
 
   .card-bottom {
     width: 100%;
-    min-height: 448px;
+    height: auto;
     padding: 20px;
+    margin-top: 10px;
   }
 
-  #card1 {
+  .card1 {
     /* background-image: url(./images/desktop-card1.png); */
     background-repeat: no-repeat;
     background-size: contain;
@@ -484,6 +496,11 @@ nav a {
 }
 
 .card-top img {
+  width: 100%;
+  height: 100%;
+}
+
+.imgfill {
   width: 100%;
   height: 100%;
 }
@@ -1029,11 +1046,12 @@ nav a {
 }
 
 .mobile-popup {
-  width: 375px;
+  width: 100%;
   height: 100vh;
   padding: 5px 20px;
   display: none;
   z-index: 90;
+  overflow-x: auto;
   background-image: url("./images/overlay.png");
 }
 
@@ -1050,9 +1068,7 @@ nav a {
 }
 
 .stop-scroll {
-  position: fixed;
-  left: 50%;
-  transform: translate(-50%);
+  overflow: hidden;
 }
 
 .popup-statusbar {
@@ -1065,9 +1081,10 @@ nav a {
 @media screen and (min-width: 768px) {
   .mobile-popup {
     width: 100%;
+    height: 100vh;
     padding: 1% 20%;
-    opacity: 0.99;
-    z-index: 90;
+    overflow-x: hidden;
+    overflow-y: auto;
     background-image: url("./images/overlay_desktop.png");
   }
 
@@ -1096,11 +1113,12 @@ nav a {
 
 @media screen and (min-width: 768px) {
   .mobile-popup-card {
+    height: 100%;
     display: flex;
     padding: 25px;
     margin-top: 20px;
     margin-bottom: 30px;
-    flex-flow: column wrap;
+    flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     gap: 12px;
@@ -1113,16 +1131,22 @@ nav a {
 .card-image {
   display: flex;
   width: 100%;
+  min-height: 220px;
+  max-height: 400px;
   justify-content: center;
+}
+
+.card-image img {
+  width: 100%;
+  /*height: 100%; */
 }
 
 @media screen and (min-width: 768px) {
   .card-image {
+    display: flex;
     width: 100%;
-    height: 586px;
-    justify-content: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    max-height: 556px;
+    border: 2px solid goldenrod;
   }
   
   .work-description-container {
@@ -1155,6 +1179,10 @@ nav a {
   align-items: center;
 }
 
+.popup-technologies {
+  margin-top: 10px;
+}
+
 @media screen and (min-width: 768px) {
   .popup-top {
     display: flex;
@@ -1182,9 +1210,9 @@ nav a {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 12px 22px;
+  padding: 12px 15px;
   margin: 20px 5px 10px 5px;
-  gap: 10px;
+  gap: 5px;
   justify-content: space-between;
   bottom: 4px;
   border: 1px solid #6070ff;
@@ -1195,7 +1223,7 @@ nav a {
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
-  line-height: 20px;
+  line-height: 15px;
   cursor: pointer;
 }
 
