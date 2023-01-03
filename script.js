@@ -17,7 +17,7 @@ menuArray.forEach(menu => {
   menu.addEventListener("click", function(event){
     mobileMenuContainer.style.display = "none";
     bodyContainer.style.filter = "none";
-  bodyContainer.style.zIndex = 2;
+    bodyContainer.style.zIndex = 2;
   });
 });
 
