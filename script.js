@@ -27,8 +27,6 @@ hideMobileMenu.addEventListener('click', () => {
   bodyContainer.style.zIndex = 2;
 });
 
-window.onscroll = function () { showOrHideTopButton(); };
-
 // When user scrolls down 500px from the top, show the scroll to top button
 function showOrHideTopButton() {
   if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
@@ -37,6 +35,8 @@ function showOrHideTopButton() {
     fab.style.display = 'none';
   }
 }
+
+window.onscroll = function () { showOrHideTopButton(); };
 
 // scroll the page to the top
 function scrollDocumentToTop() {
