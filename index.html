@@ -6,10 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jonas's Portfolio</title>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
+  <div class="show-mobile-menu">
+    <img class="mobile-status-bar" alt="status bar" src="./images/status-bar-dark.png">
+    <img class="cancel-icon" src="./images/menu-cancel.png" alt="cancel mobile menu">
+    <div class="mobile-menu">
+      <a class="mobile-menu-item" href="#portfolio">Portfolio</a>
+      <a class="mobile-menu-item" href="#about">About</a>
+      <a class="mobile-menu-item" href="#contact">Contact</a>
+    </div>
+
+    <div class="bottom-black-line">
+      <img src="./images/button-shape.png" alt="">
+    </div>
+  </div>
 
     <div class="container">
       <header class="header">
@@ -18,7 +34,7 @@
             <nav>
                 <a href="index.html"><h2 class="logo-text">Jonas</h2></a>
                 <div class="mobile-menu-icon">
-                    <a><img alt="overflow-image" src="images/icon_menu_img.png"></a>
+                    <img alt="overflow-image" src="images/icon_menu_img.png">
                 </div>
 
                 <div class="desktop-menu">
@@ -107,7 +123,7 @@
                 </div>
               </article>
   
-              <button class="see-project-btn">See Project</button>
+              <button type="button" class="see-project-btn">See Project</button>
             </div>
             
           </div>
@@ -145,7 +161,7 @@
                 </div>
               </article>
   
-              <button class="see-project-btn">See Project</button>
+              <button type="button" class="see-project-btn">See Project</button>
             </div>
           
           </div>
@@ -183,7 +199,7 @@
                 </div>
               </article>
   
-              <button class="see-project-btn">See Project</button>
+              <button type="button" class="see-project-btn">See Project</button>
             </div>
             
           </div>
@@ -221,7 +237,7 @@
                 </div>
               </article>
   
-              <button class="see-project-btn">See Project</button>
+              <button type="button" class="see-project-btn">See Project</button>
             </div>
             
           </div>
@@ -267,7 +283,7 @@
                   </ul>
               </div>
   
-              <button class="resume-btn see-project-btn">Get my resume</button>
+              <button type="button" class="resume-btn see-project-btn">Get my resume</button>
             </div>
   
               <div class="expertise-categories">
@@ -345,8 +361,15 @@
         </section>
  
       </div>
+
+      <div class="fab-container">
+        <div class="button iconButton">
+          <i class="fa-solid fa-arrow-up"></i>
+        </div>
+      </div>
         
     </div>
-    
+
+    <script src="script.js"></script>
 </body>
 </html>
