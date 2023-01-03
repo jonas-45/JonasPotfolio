@@ -48,7 +48,7 @@ const description = document.querySelectorAll('.project-description');
 const technologies = document.querySelectorAll('.web-technologies ul');
 const project_details_btn = document.querySelectorAll('.project-btn');
 
-const dot_img = './images/counter.png';
+const dotImg = './images/counter.png';
 
 ProjectsData.forEach((project, index) => {
   const projectCardImage = document.createElement('img');
@@ -71,7 +71,7 @@ ProjectsData.forEach((project, index) => {
       subtitleItem.innerHTML = subtitle;
       const subtitleItem2 = document.createElement('li');
       const dot = document.createElement('img');
-      dot.src = dot_img;
+      dot.src = dotImg;
 
       subtitleItem2.appendChild(dot);
 
@@ -81,9 +81,9 @@ ProjectsData.forEach((project, index) => {
   });
 
   project.technologies.forEach((tag) => {
-    const tech_item = document.createElement('li');
-    tech_item.innerHTML = tag;
-    technologies[index].appendChild(tech_item);
+    const techItem = document.createElement('li');
+    techItem.innerHTML = tag;
+    technologies[index].appendChild(techItem);
   });
 
   project_details_btn[index].addEventListener('click', () => {
@@ -91,7 +91,7 @@ ProjectsData.forEach((project, index) => {
   });
 });
 
-function showProjectDetailsPopUp(project_Data) {
+function showProjectDetailsPopUp(projectData) {
   // const name = 'name';
   // const description = 'description';
   // const tags = 'technologies';
@@ -119,14 +119,14 @@ function showProjectDetailsPopUp(project_Data) {
   popupSubtitles.innerHTML = '';
 
   // set pop-up project title
-  popupTitle.innerHTML = project_Data.title;
+  popupTitle.innerHTML = projectData.title;
 
   // set pop-up project description text
-  popupDescription.innerHTML = project_Data.description;
+  popupDescription.innerHTML = projectData.description;
 
   // Set popup subtitles
-  project_Data.subtitles.forEach((tag, sub_index) => {
-    if (sub_index === project_Data.subtitles.length - 1) {
+  projectData.subtitles.forEach((tag, subIndex) => {
+    if (subIndex === projectData.subtitles.length - 1) {
       const pSubtitleItem = document.createElement('li');
       pSubtitleItem.innerHTML = tag;
 
@@ -137,7 +137,7 @@ function showProjectDetailsPopUp(project_Data) {
 
       const pSubtitleItem2 = document.createElement('li');
       const dot = document.createElement('img');
-      dot.src = dot_img;
+      dot.src = dotImg;
       pSubtitleItem2.appendChild(dot);
 
       popupSubtitles.appendChild(pSubtitleItem);
@@ -146,16 +146,16 @@ function showProjectDetailsPopUp(project_Data) {
   });
 
   // Set popup technology tags
-  project_Data.technologies.forEach((tag) => {
-    const tag_item = document.createElement('li');
-    tag_item.innerHTML = tag;
+  projectData.technologies.forEach((tag) => {
+    const tagItem = document.createElement('li');
+    tagItem.innerHTML = tag;
 
-    popupTechnologies.appendChild(tag_item);
+    popupTechnologies.appendChild(tagItem);
   });
 
   // set pop-up card image
   const cardImage = document.createElement('img');
-  cardImage.src = project_Data.imageUrl;
+  cardImage.src = projectData.imageUrl;
   popupCardImage.appendChild(cardImage);
 
   // show the popup
