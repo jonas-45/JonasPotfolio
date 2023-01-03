@@ -38,7 +38,7 @@ body {
   width: 375px;
   height: 100%;
   position: fixed;
-  background-color: #6070FF;
+  background-color: #6070ff;
   padding: 10px;
   opacity: 0.75;
   z-index: 99;
@@ -69,6 +69,7 @@ body {
   clear: both;
   padding-left: 30px;
 }
+
 .mobile-menu-item {
   display: block;
   font-family: 'Poppins';
@@ -247,6 +248,7 @@ nav a {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+
     /* padding: 250px 250px 250px 250px; */
     padding-bottom: 250px;
     padding-left: 10%;
@@ -1159,7 +1161,7 @@ nav a {
 .button {
   width: 60px;
   height: 60px;
-  background:#A11692;
+  background: #a11692;
 }
 
 .iconButton i {
