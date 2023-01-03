@@ -7,18 +7,6 @@ let menuArray = Array.from(mobileMenuItems);
 
 let fab = document.querySelector(".fab-container");
 
-hamburgerIcon.addEventListener("click", function(event){
-  mobileMenuContainer.style.display = "block";
-  bodyContainer.style.filter = "blur(5px)";
-  bodyContainer.style.zIndex = -1;
-});
-
-hideMobileMenu.addEventListener("click", function(event){
-  mobileMenuContainer.style.display = "none";
-  bodyContainer.style.filter = "none";
-  bodyContainer.style.zIndex = 2;
-});
-
 menuArray.forEach(menu => {
   menu.addEventListener("click", function(event){
     mobileMenuContainer.style.display = "none";
