@@ -54,15 +54,15 @@ body {
   margin-right: 80px;
 }
 
+.cancel-icon {
+  cursor: pointer;
+}
+
 .show-mobile-menu .cancel-icon {
   width: 15px;
   height: 15px;
   margin-right: 20px;
   float: right;
-}
-
-.cancel-icon {
-  cursor: pointer;
 }
 
 .mobile-menu {
@@ -71,8 +71,7 @@ body {
 }
 
 .mobile-menu-item {
-  display: block;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
@@ -82,6 +81,10 @@ body {
   color: #fff;
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+nav a {
+  cursor: pointer;
 }
 
 .mobile-menu-item a {
@@ -201,10 +204,6 @@ nav h2 {
   font-weight: 700;
   font-size: 1.5rem;
   line-height: 20px;
-}
-
-nav a {
-  cursor: pointer;
 }
 
 .logo-text {
