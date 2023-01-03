@@ -21,6 +21,12 @@ menuArray.forEach(menu => {
   });
 });
 
+hideMobileMenu.addEventListener("click", function(event){
+  mobileMenuContainer.style.display = "none";
+  bodyContainer.style.filter = "none";
+  bodyContainer.style.zIndex = 2;
+});
+
 window.onscroll = function(){showOrHideTopButton()};
 
 //When user scrolls down 500px from the top, show the scroll to top button
