@@ -24,7 +24,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Hello Microverse <a name="about-project"></a>
+# 📖 Portfolio Project <a name="about-project"></a>
 
 My Potfolio is a project aimed at sharpening the skills in developing a mobile screen responsive web applications. This Microverse task trains the developer to develop applications not only for desktop but also apps that can be viewed on even smaller screens with great user experience. This (<a href="https://www.loom.com/share/178a25875ce94fdc88ec80a83c7cb863"> link</a>) gives a video update of the project.
 
@@ -61,7 +61,6 @@ Visit the website using the link https://jonas-45.github.io/JonasPotfolio/
 
 <!--Future features -->
 ## Future features <a name="future-features"></a>
-.Javascript will be added to make the site more interractive
 .The contact form will be updated to accept user input and details will be sent to a database stored on a server.
 .forms and buttons will be updated to submit information to server
 
@@ -86,7 +85,6 @@ Feel free to check the [issues page](../../issues/).
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- SUPPORT -->
-
 ## ⭐️ Show your support <a name="support"></a>
 
 If you like this project, give it a thumps up and follow me on Github for more exciting projects
