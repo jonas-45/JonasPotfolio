@@ -13,18 +13,18 @@ hamburgerIcon.addEventListener('click', () => {
   bodyContainer.style.zIndex = -1;
 });
 
+hideMobileMenu.addEventListener('click', () => {
+  mobileMenuContainer.style.display = 'none';
+  bodyContainer.style.filter = 'none';
+  bodyContainer.style.zIndex = 2;
+});
+
 menuArray.forEach((menu) => {
   menu.addEventListener('click', () => {
     mobileMenuContainer.style.display = 'none';
     bodyContainer.style.filter = 'none';
     bodyContainer.style.zIndex = 2;
   });
-});
-
-hideMobileMenu.addEventListener('click', () => {
-  mobileMenuContainer.style.display = 'none';
-  bodyContainer.style.filter = 'none';
-  bodyContainer.style.zIndex = 2;
 });
 
 // When user scrolls down 500px from the top, show the scroll to top button

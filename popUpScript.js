@@ -1,71 +1,52 @@
-const title1 = 'Tonic';
-const subtitles1 = ['Canopy', 'Back End Dev', '2015'];
-const description1 = 'A daily selection of privately personalized reads; no accounts or sign-ups required.';
-const imgUrl1 = './images/card1.png';
-const technologies1 = ['html', 'css', 'javascript'];
-const projectData1 = {
-  title: title1,
-  description: description1,
-  imageUrl: imgUrl1,
-  technologies: technologies1,
-  subtitles: subtitles1,
-};
-
-const title2 = 'Multi-Post Stories';
-const subtitles2 = ['Canopy', 'Back End Dev', '2015'];
-const description2 = 'A daily selection of privately personalized reads; no accounts or sign-ups required.';
-const imgUrl2 = './images/card2.png';
-const technologies2 = ['html', 'css', 'javascript'];
-const projectData2 = {
-  title: title2,
-  description: description2,
-  imageUrl: imgUrl2,
-  technologies: technologies2,
-  subtitles: subtitles2,
-};
-
-const title3 = 'Tonic';
-const subtitles3 = ['Canopy', 'Back End Dev', '2015'];
-const description3 = 'A daily selection of privately personalized reads; no accounts or sign-ups required.';
-const imgUrl3 = './images/card3.png';
-const technologies3 = ['html', 'css', 'javascript'];
-const projectData3 = {
-  title: title3,
-  description: description3,
-  imageUrl: imgUrl3,
-  technologies: technologies3,
-  subtitles: subtitles3,
-};
-
-const title4 = 'Multi-Post Stories';
-const subtitles4 = ['Canopy', 'Back End Dev', '2015'];
-const description4 = 'A daily selection of privately personalized reads; no accounts or sign-ups required.';
-const imgUrl4 = './images/card4.png';
-const technologies4 = ['html', 'ruby', 'css', 'javascript'];
-const projectData4 = {
-  title: title4,
-  description: description4,
-  imageUrl: imgUrl4,
-  technologies: technologies4,
-  subtitles: subtitles4,
-};
-
-const ProjectsData = [projectData1, projectData2, projectData3, projectData4];
+const ProjectsData = [
+  {
+    title: 'Tonic',
+    subtitle: ['Canopy', 'Back End Dev', '2015'],
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    imageUrl: './images/card1.png',
+    technologies: ['html', 'css', 'javascript'],
+    liveUrl: 'https://jonas-45.github.io/JonasPotfolio/',
+    sourceUrl: 'https://github.com/jonas-45',
+  },
+  {
+    title: 'Multi-Post Stories',
+    subtitle: ['Canopy', 'Back End Dev', '2015'],
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    imageUrl: './images/card2.png',
+    technologies: ['html', 'css', 'javascript'],
+    liveUrl: 'https://jonas-45.github.io/JonasPotfolio/',
+    sourceUrl: 'https://github.com/jonas-45',
+  },
+  {
+    title: 'Tonic',
+    subtitle: ['Canopy', 'Back End Dev', '2015'],
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    imageUrl: './images/card3.png',
+    technologies: ['html', 'css', 'javascript'],
+    liveUrl: 'https://jonas-45.github.io/JonasPotfolio/',
+    sourceUrl: 'https://github.com/jonas-45',
+  },
+  {
+    title: 'Multi-Post Stories',
+    subtitle: ['Canopy', 'Back End Dev', '2015'],
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    imageUrl: './images/card3.png',
+    technologies: ['html', 'css', 'javascript'],
+    liveUrl: 'https://jonas-45.github.io/JonasPotfolio/',
+    sourceUrl: 'https://github.com/jonas-45',
+  },
+];
 
 const cardImg = document.querySelectorAll('.card-top');
 const titles = document.querySelectorAll('.project-title');
 const subtitles = document.querySelectorAll('.card-categories ul');
 const description = document.querySelectorAll('.project-description');
 const technologies = document.querySelectorAll('.web-technologies ul');
-const projectDetailsBtn = document.querySelectorAll('.project-btn');
+const projectDetailsBtns = document.querySelectorAll('.project-btn');
 
 const dotImg = './images/counter.png';
 
-function showProjectDetailsPopUp(projectData) {
-  // const name = 'name';
-  // const description = 'description';
-  // const tags = 'technologies';
-
+function showProjectDetailsPopUp(pData) {
   const body = document.querySelector('body');
   const popupWindow = document.querySelector('.mobile-popup');
   const popupCardImage = document.querySelector('.card-image');
@@ -75,6 +56,16 @@ function showProjectDetailsPopUp(projectData) {
   const popupSubtitles = document.querySelector('.popup-subtitles ul');
   const popupDescription = document.querySelector('.popup-description');
   const popupTechnologies = document.querySelector('.popup-technologies');
+  const seeLive = document.querySelector('.seelive-btn');
+  const seeSource = document.querySelector('.source-btn');
+
+  seeLive.addEventListener('click', () => {
+    seeLive.setAttribute('href', pData.liveUrl);
+  });
+
+  seeSource.addEventListener('click', () => {
+    seeSource.setAttribute('href', pData.sourceUrl);
+  });
 
   // pop-up close button
   popupClose.style.cursor = 'pointer';
@@ -89,14 +80,14 @@ function showProjectDetailsPopUp(projectData) {
   popupSubtitles.innerHTML = '';
 
   // set pop-up project title
-  popupTitle.innerHTML = projectData.title;
+  popupTitle.innerHTML = pData.title;
 
   // set pop-up project description text
-  popupDescription.innerHTML = projectData.description;
+  popupDescription.innerHTML = pData.description;
 
   // Set popup subtitles
-  projectData.subtitles.forEach((tag, subIndex) => {
-    if (subIndex === projectData.subtitles.length - 1) {
+  pData.subtitle.forEach((tag, subIndex) => {
+    if (subIndex === pData.subtitle.length - 1) {
       const pSubtitleItem = document.createElement('li');
       pSubtitleItem.innerHTML = tag;
 
@@ -116,7 +107,7 @@ function showProjectDetailsPopUp(projectData) {
   });
 
   // Set popup technology tags
-  projectData.technologies.forEach((tag) => {
+  pData.technologies.forEach((tag) => {
     const tagItem = document.createElement('li');
     tagItem.innerHTML = tag;
 
@@ -125,7 +116,7 @@ function showProjectDetailsPopUp(projectData) {
 
   // set pop-up card image
   const cardImage = document.createElement('img');
-  cardImage.src = projectData.imageUrl;
+  cardImage.src = pData.imageUrl;
   popupCardImage.appendChild(cardImage);
 
   // show the popup
@@ -136,16 +127,13 @@ function showProjectDetailsPopUp(projectData) {
 ProjectsData.forEach((project, index) => {
   const projectCardImage = document.createElement('img');
   projectCardImage.src = project.imageUrl;
-  projectCardImage.classList.add('imgfill');
-  // projectCardImage.style.height = "448px";
-  // cardImg[index].style.backgroundImage = "url(" + project.imageUrl + ")";
 
   cardImg[index].appendChild(projectCardImage);
   titles[index].innerHTML = project.title;
   description[index].innerHTML = project.description;
 
-  project.subtitles.forEach((subtitle, sindex) => {
-    if (sindex === project.subtitles.length - 1) {
+  project.subtitle.forEach((subtitle, sindex) => {
+    if (sindex === project.subtitle.length - 1) {
       const subtitleItem = document.createElement('li');
       subtitleItem.innerHTML = subtitle;
       subtitles[index].appendChild(subtitleItem);
@@ -169,7 +157,7 @@ ProjectsData.forEach((project, index) => {
     technologies[index].appendChild(techItem);
   });
 
-  projectDetailsBtn[index].addEventListener('click', () => {
+  projectDetailsBtns[index].addEventListener('click', () => {
     showProjectDetailsPopUp(project);
   });
 });

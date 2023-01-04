@@ -14,7 +14,9 @@ a {
 
 body {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   background-color: #e5e5e5;
 }
 
@@ -103,12 +105,13 @@ h2 {
 }
 
 .container {
-  width: 375px;
+  width: 100%;
   background-color: #f5f5f5;
+  position: relative;
 }
 
 .header {
-  width: 375px;
+  width: 100%;
   height: 718px;
 }
 
@@ -225,6 +228,7 @@ nav h2 {
   background-repeat: no-repeat;
   background-size: contain;
   background-color: #fff;
+  border-radius: 0 0 0 80px;
 }
 
 .header-container {
@@ -418,6 +422,13 @@ nav h2 {
   margin-left: 15px;
 }
 
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .works-section {
   width: 100%;
   display: grid;
@@ -428,10 +439,12 @@ nav h2 {
 
 @media screen and (min-width: 768px) {
   .works-section {
-    width: 100%;
     display: grid;
-    padding: 114px 80px;
+    width: 70%;
     justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
   }
 }
 
@@ -441,7 +454,6 @@ nav h2 {
   justify-content: center;
   align-items: flex-start;
   padding: 25px;
-  gap: 12px;
   background: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
@@ -460,14 +472,14 @@ nav h2 {
 @media screen and (min-width: 768px) {
   .works-card {
     display: flex;
+    height: auto;
     flex-direction: row;
     justify-content: space-between;
-    flex-wrap: nowrap;
+    align-items: center;
     padding: 25px;
     background: #fff;
     border: 1px solid #dfe1e6;
     border-radius: 20px;
-    margin: 40px 70px;
   }
 
   .works-card:nth-child(even) {
@@ -481,69 +493,66 @@ nav h2 {
 }
 
 .card-top {
-  width: 295px;
-  height: 220px;
+  width: 100%;
+  min-height: 220px;
+  max-height: 350px;
 }
 
 #card1 {
-  background-image: url(./images/card1.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 #card2 {
-  background-image: url(./images/card2.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 #card3 {
-  background-image: url(./images/card3.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 #card4 {
-  background-image: url(./images/card4.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 @media screen and (min-width: 768px) {
   .card-top {
+    display: flex;
     width: 100%;
-    min-height: 448px;
+    justify-content: center;
+    align-items: center;
+    height: 448px;
   }
 
   .card-bottom {
     width: 100%;
-    min-height: 448px;
+    height: auto;
     padding: 20px;
+    margin-top: 10px;
   }
 
-  #card1 {
-    background-image: url(./images/desktop-card1.png);
+  .card1 {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
   }
 
   #card2 {
-    background-image: url(./images/desktop-card2.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
   }
 
   #card3 {
-    background-image: url(./images/desktop-card3.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
   }
 
   #card4 {
-    background-image: url(./images/desktop-card4.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -551,6 +560,11 @@ nav h2 {
 }
 
 .card-top img {
+  width: 100%;
+  height: 100%;
+}
+
+.imgfill {
   width: 100%;
   height: 100%;
 }
@@ -644,31 +658,7 @@ nav h2 {
   color: #344563;
 }
 
-.desktop-title {
-  display: none;
-}
-
-.desktop-subtitle {
-  display: none;
-}
-
 @media screen and (min-width: 768px) {
-  .mobile-title {
-    display: none;
-  }
-
-  .mobile-subtitle {
-    display: none;
-  }
-
-  .desktop-title {
-    display: block;
-  }
-
-  .desktop-subtitle {
-    display: list-item;
-  }
-
   .card-categories .desktop-subtitle {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
@@ -689,26 +679,6 @@ nav h2 {
   color: #344563;
 }
 
-.work-description-desktop {
-  display: none;
-}
-
-@media screen and (min-width: 768px) {
-  .work-description {
-    display: none;
-  }
-
-  .work-description-desktop {
-    display: block;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 24px;
-    color: #344563;
-  }
-}
-
 .web-technologies ul {
   display: flex;
   justify-content: flex-start;
@@ -720,6 +690,13 @@ nav h2 {
   background: #ebebff;
   border-radius: 8px;
   padding: 3px 17px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #6070ff;
 }
 
 .languages li span {
@@ -747,16 +724,6 @@ nav h2 {
   .languages li img {
     cursor: pointer;
   }
-}
-
-.web-technologies ul li span {
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  color: #6070ff;
 }
 
 .see-project-btn {
@@ -1141,32 +1108,193 @@ nav h2 {
   color: #fff;
 }
 
-.fab-container {
+.mobile-popup {
+  width: 100%;
+  height: 100vh;
+  padding: 5px 20px;
   display: none;
+  z-index: 90;
+  overflow-x: auto;
+  background-image: url("./images/overlay.png");
+}
+
+.show-popup {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
   position: fixed;
-  bottom: 50px;
-  right: 50px;
-  cursor: pointer;
-  z-index: 80;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
 }
 
-.iconButton {
-  width: 50px;
-  height: 50px;
-  border-radius: 100%;
-  box-shadow: 5px 5px 2px #444;
+.stop-scroll {
+  overflow: hidden;
 }
 
-.button {
-  width: 60px;
-  height: 60px;
-  background: #a11692;
+.popup-statusbar {
+  display: block;
 }
 
-.iconButton i {
+.popup-button-line {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-popup {
+    width: 100%;
+    height: 100vh;
+    padding: 1% 20%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-image: url("./images/overlay_desktop.png");
+  }
+
+  .popup-statusbar {
+    display: none;
+  }
+
+  .popup-button-line {
+    display: none;
+  }
+}
+
+.mobile-popup-card {
+  display: flex;
+  padding: 15px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 12px;
+  background: #fff;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-popup-card {
+    height: 100%;
+    display: flex;
+    padding: 25px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 12px;
+    background: #fff;
+    border: 1px solid #dfe1e6;
+    border-radius: 20px;
+  }
+}
+
+.card-image {
+  display: flex;
+  width: 100%;
+  min-height: 220px;
+  max-height: 400px;
+  justify-content: center;
+}
+
+.card-image img {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .card-image {
+    display: flex;
+    width: 100%;
+    max-height: 686px;
+  }
+
+  .work-description-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+
+  .popup-description {
+    flex-basis: 70%;
+  }
+
+  .p-technologies {
+    display: flex;
+    flex-basis: 30%;
+    flex-wrap: wrap;
+  }
+}
+
+.popup-separator-line {
+  width: 303px;
+  margin-top: 20px;
+  border: 1px solid #ebecf0;
+}
+
+.popup-top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.popup-technologies {
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+@media screen and (min-width: 768px) {
+  .popup-top {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.popup-title {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.2rem;
+  line-height: 52px;
+  color: #172b4d;
+}
+
+.popup-buttons {
   display: flex;
   justify-content: center;
+  width: 100%;
+}
+
+.popup-btn {
+  display: flex;
+  flex-direction: row;
   align-items: center;
-  height: 100%;
-  color: #fff;
+  padding: 12px 15px;
+  margin: 20px 5px 10px 5px;
+  gap: 5px;
+  justify-content: center;
+  bottom: 4px;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #396df2;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 15px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.popup-btn img {
+  width: 18px;
+  height: 20px;
 }
