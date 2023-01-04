@@ -21,6 +21,7 @@ body {
 }
 
 .status-bar {
+  width: 100%;
   display: block;
 }
 
@@ -32,6 +33,71 @@ body {
   .status-bar {
     display: none;
   }
+}
+
+.show-mobile-menu {
+  display: none;
+  width: 375px;
+  height: 100%;
+  position: fixed;
+  background-color: #6070ff;
+  padding: 10px;
+  opacity: 0.75;
+  z-index: 99;
+}
+
+@media screen and (min-width: 768px) {
+  .show-mobile-menu {
+    display: none;
+  }
+}
+
+.show-mobile-menu .mobile-status-bar {
+  margin-right: 80px;
+}
+
+.cancel-icon {
+  cursor: pointer;
+}
+
+.show-mobile-menu .cancel-icon {
+  width: 15px;
+  height: 15px;
+  margin-right: 20px;
+  float: right;
+}
+
+.mobile-menu {
+  clear: both;
+  padding-left: 30px;
+}
+
+.mobile-menu-item {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+nav a {
+  cursor: pointer;
+}
+
+.mobile-menu-item a {
+  color: #fff;
+}
+
+.bottom-black-line {
+  position: fixed;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 h2 {
@@ -118,6 +184,7 @@ nav {
 
 .mobile-menu-icon {
   display: block;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 768px) {
@@ -140,10 +207,6 @@ nav h2 {
   font-weight: 700;
   font-size: 1.5rem;
   line-height: 20px;
-}
-
-nav a {
-  cursor: pointer;
 }
 
 .logo-text {
@@ -188,7 +251,11 @@ nav a {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    padding: 250px 250px 250px 250px;
+
+    /* padding: 250px 250px 250px 250px; */
+    padding-bottom: 250px;
+    padding-left: 10%;
+    padding-top: 250px;
     border-radius: 0 0 0 100px;
     background-color: #fff;
   }
@@ -224,8 +291,7 @@ nav a {
 
 @media screen and (min-width: 768px) {
   .title {
-    width: auto;
-    flex-wrap: wrap;
+    width: 100%;
     justify-content: center;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
@@ -234,6 +300,13 @@ nav a {
     line-height: 50px;
     color: #172b4d;
     padding: 30px 20px 10px 10px;
+  }
+}
+
+@media screen and (min-width: 1058px) {
+  .title-break::after {
+    content: "\a";
+    white-space: pre;
   }
 }
 
