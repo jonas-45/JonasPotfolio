@@ -40,7 +40,7 @@ body {
   width: 375px;
   height: 100%;
   position: fixed;
-  background-color: #6070ff;
+  background-color: #000;
   padding: 10px;
   opacity: 0.75;
   z-index: 99;
