@@ -1,168 +1,163 @@
 const ProjectsData = [
   {
-    title:"Tonic",
-    subtitle: ["Canopy","Back End Dev","2015"],
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
-    imageUrl: "./images/card1.png",
-    technologies: ["html","css","javascript"],
-    liveUrl1: "https://jonas-45.github.io/JonasPotfolio/",
-    sourceUrl: "https://github.com/jonas-45"
+    title: 'Tonic',
+    subtitle: ['Canopy', 'Back End Dev', '2015'],
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    imageUrl: './images/card1.png',
+    technologies: ['html', 'css', 'javascript'],
+    liveUrl: 'https://jonas-45.github.io/JonasPotfolio/',
+    sourceUrl: 'https://github.com/jonas-45',
   },
   {
-    title:"Multi-Post Stories",
-    subtitle: ["Canopy","Back End Dev","2015"],
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
-    imageUrl: "./images/card2.png",
-    technologies: ["html","css","javascript"],
-    liveUrl1: "https://jonas-45.github.io/JonasPotfolio/",
-    sourceUrl: "https://github.com/jonas-45"
+    title: 'Multi-Post Stories',
+    subtitle: ['Canopy', 'Back End Dev', '2015'],
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    imageUrl: './images/card2.png',
+    technologies: ['html', 'css', 'javascript'],
+    liveUrl: 'https://jonas-45.github.io/JonasPotfolio/',
+    sourceUrl: 'https://github.com/jonas-45',
   },
   {
-    title:"Tonic",
-    subtitle: ["Canopy","Back End Dev","2015"],
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
-    imageUrl: "./images/card3.png",
-    technologies: ["html","css","javascript"],
-    liveUrl1: "https://jonas-45.github.io/JonasPotfolio/",
-    sourceUrl: "https://github.com/jonas-45"
-  }
-,
-{
-  title:"Multi-Post Stories",
-  subtitle: ["Canopy","Back End Dev","2015"],
-  description: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
-  imageUrl: "./images/card3.png",
-  technologies: ["html","css","javascript"],
-  liveUrl1: "https://jonas-45.github.io/JonasPotfolio/",
-  sourceUrl: "https://github.com/jonas-45"
-}
+    title: 'Tonic',
+    subtitle: ['Canopy', 'Back End Dev', '2015'],
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    imageUrl: './images/card3.png',
+    technologies: ['html', 'css', 'javascript'],
+    liveUrl: 'https://jonas-45.github.io/JonasPotfolio/',
+    sourceUrl: 'https://github.com/jonas-45',
+  },
+  {
+    title: 'Multi-Post Stories',
+    subtitle: ['Canopy', 'Back End Dev', '2015'],
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    imageUrl: './images/card3.png',
+    technologies: ['html', 'css', 'javascript'],
+    liveUrl: 'https://jonas-45.github.io/JonasPotfolio/',
+    sourceUrl: 'https://github.com/jonas-45',
+  },
 ];
 
-let card_img = document.querySelectorAll(".card-top");
-let titles = document.querySelectorAll(".project-title");
-let subtitles = document.querySelectorAll(".card-categories ul");
-let description = document.querySelectorAll(".project-description");
-let technologies = document.querySelectorAll(".web-technologies ul");
-let project_details_btn = document.querySelectorAll(".project-btn");
+const cardImg = document.querySelectorAll('.card-top');
+const titles = document.querySelectorAll('.project-title');
+const subtitles = document.querySelectorAll('.card-categories ul');
+const description = document.querySelectorAll('.project-description');
+const technologies = document.querySelectorAll('.web-technologies ul');
+const projectDetailsBtns = document.querySelectorAll('.project-btn');
 
-let dot_img = "./images/counter.png";
+const dotImg = './images/counter.png';
 
-ProjectsData.forEach((project,index) => {
-  let project_card_image = document.createElement("img");
-  project_card_image.src = project.imageUrl;
-  
-  
+function showProjectDetailsPopUp(pData) {
+  const body = document.querySelector('body');
+  const popupWindow = document.querySelector('.mobile-popup');
+  const popupCardImage = document.querySelector('.card-image');
+  const popupClose = document.querySelector('.popup-close');
 
-  card_img[index].appendChild(project_card_image);
-  titles[index].innerHTML = project["title"];
-  description[index].innerHTML = project["description"];
+  const popupTitle = document.querySelector('.popup-title');
+  const popupSubtitles = document.querySelector('.popup-subtitles ul');
+  const popupDescription = document.querySelector('.popup-description');
+  const popupTechnologies = document.querySelector('.popup-technologies');
+  const seeLive = document.querySelector('.seelive-btn');
+  const seeSource = document.querySelector('.source-btn');
 
-  project["subtitle"].forEach((subtitle,sindex) => {
-    if(sindex === project["subtitle"].length - 1){
-      let subtitle_item = document.createElement("li");
-      subtitle_item.innerHTML = subtitle;
-      subtitles[index].appendChild(subtitle_item);
-    }else{
-      let subtitle_item = document.createElement("li");
-      subtitle_item.innerHTML = subtitle;
-      let subtitle_item2 = document.createElement("li");
-      let dot = document.createElement("img");
-      dot.src = dot_img;
+  seeLive.addEventListener('click', () => {
+    seeLive.setAttribute('href', pData.liveUrl);
+  });
 
-      subtitle_item2.appendChild(dot);
+  seeSource.addEventListener('click', () => {
+    seeSource.setAttribute('href', pData.sourceUrl);
+  });
 
-      subtitles[index].appendChild(subtitle_item);
-      subtitles[index].appendChild(subtitle_item2);
+  // pop-up close button
+  popupClose.style.cursor = 'pointer';
+  popupClose.addEventListener('click', () => {
+    popupWindow.classList.remove('show-popup');
+    body.classList.remove('stop-scroll');
+  });
+
+  // reset image, subtitles and technology tags to empty
+  popupTechnologies.innerHTML = '';
+  popupCardImage.innerHTML = '';
+  popupSubtitles.innerHTML = '';
+
+  // set pop-up project title
+  popupTitle.innerHTML = pData.title;
+
+  // set pop-up project description text
+  popupDescription.innerHTML = pData.description;
+
+  // Set popup subtitles
+  pData.subtitle.forEach((tag, subIndex) => {
+    if (subIndex === pData.subtitle.length - 1) {
+      const pSubtitleItem = document.createElement('li');
+      pSubtitleItem.innerHTML = tag;
+
+      popupSubtitles.appendChild(pSubtitleItem);
+    } else {
+      const pSubtitleItem = document.createElement('li');
+      pSubtitleItem.innerHTML = tag;
+
+      const pSubtitleItem2 = document.createElement('li');
+      const dot = document.createElement('img');
+      dot.src = dotImg;
+      pSubtitleItem2.appendChild(dot);
+
+      popupSubtitles.appendChild(pSubtitleItem);
+      popupSubtitles.appendChild(pSubtitleItem2);
     }
   });
 
-  project["technologies"].forEach((tag) => {
-    let tech_item = document.createElement("li");
-    tech_item.innerHTML = tag;
-    technologies[index].appendChild(tech_item);
+  // Set popup technology tags
+  pData.technologies.forEach((tag) => {
+    const tagItem = document.createElement('li');
+    tagItem.innerHTML = tag;
+
+    popupTechnologies.appendChild(tagItem);
   });
 
-  project_details_btn[index].addEventListener("click", () => {
-    showProjectDetailsPopUp(project);
-  })
+  // set pop-up card image
+  const cardImage = document.createElement('img');
+  cardImage.src = pData.imageUrl;
+  popupCardImage.appendChild(cardImage);
 
-});
-
-function showProjectDetailsPopUp(project_Data){
-  let body = document.querySelector("body");
-  let popup_window = document.querySelector(".mobile-popup");
-  let popup_card_image = document.querySelector(".card-image");
-  let popup_close = document.querySelector(".popup-close");
-
-  let popup_title = document.querySelector(".popup-title")
-  let popup_subtitles = document.querySelector(".popup-subtitles ul");
-  let popup_description = document.querySelector(".popup-description");
-  let popup_technologies = document.querySelector(".popup-technologies");
-  const seeLive = document.querySelector(".seelive-btn")
-  const seeSource = document.querySelector(".source-btn")
-
-  seeLive.addEventListener("click",function(){
-    alert("button clicked " + project_Data.title)
-  });
-
-  seeSource.addEventListener("click",function(){
-    alert("button clicked " + project_Data["description"])
-  });
-
-  //pop-up close button
-  popup_close.style.cursor = "pointer";
-  popup_close.addEventListener("click", function(){
-  popup_window.classList.remove("show-popup");
-  body.classList.remove("stop-scroll");
-  });
-
-  //reset image, subtitles and technology tags to empty
-  popup_technologies.innerHTML = "";
-  popup_card_image.innerHTML = "";
-  popup_subtitles.innerHTML = "";
-
-  //set pop-up project title
-  popup_title.innerHTML = project_Data["title"];
-
-  //set pop-up project description text
-  popup_description.innerHTML = project_Data["description"];
-
-  //Set popup subtitles
-  project_Data["subtitle"].forEach((tag,sub_index) => {
-    if(sub_index === project_Data["subtitle"].length - 1){
-      let p_subtitle_item = document.createElement("li");
-      p_subtitle_item.innerHTML = tag;
-  
-      popup_subtitles.appendChild(p_subtitle_item);
-    }else{
-      let p_subtitle_item = document.createElement("li");
-      p_subtitle_item.innerHTML = tag;
-
-      let p_subtitle_item2 = document.createElement("li");
-      let dot = document.createElement("img");
-      dot.src = dot_img;
-      p_subtitle_item2.appendChild(dot);
-  
-      popup_subtitles.appendChild(p_subtitle_item);
-      popup_subtitles.appendChild(p_subtitle_item2);
-    }
-    
-  });
-
-  //Set popup technology tags
-  project_Data["technologies"].forEach((tag) => {
-    let tag_item = document.createElement("li");
-    tag_item.innerHTML = tag;
-
-    popup_technologies.appendChild(tag_item);
-  });
-
-  //set pop-up card image
-  let card_image = document.createElement("img");
-  card_image.src = project_Data["imageUrl"];
-  popup_card_image.appendChild(card_image);
-  
-  //show the popup
-  body.classList.add("stop-scroll");
-  popup_window.classList.add("show-popup");
+  // show the popup
+  body.classList.add('stop-scroll');
+  popupWindow.classList.add('show-popup');
 }
+
+ProjectsData.forEach((project, index) => {
+  const projectCardImage = document.createElement('img');
+  projectCardImage.src = project.imageUrl;
+
+  cardImg[index].appendChild(projectCardImage);
+  titles[index].innerHTML = project.title;
+  description[index].innerHTML = project.description;
+
+  project.subtitle.forEach((subtitle, sindex) => {
+    if (sindex === project.subtitle.length - 1) {
+      const subtitleItem = document.createElement('li');
+      subtitleItem.innerHTML = subtitle;
+      subtitles[index].appendChild(subtitleItem);
+    } else {
+      const subtitleItem = document.createElement('li');
+      subtitleItem.innerHTML = subtitle;
+      const subtitleItem2 = document.createElement('li');
+      const dot = document.createElement('img');
+      dot.src = dotImg;
+
+      subtitleItem2.appendChild(dot);
+
+      subtitles[index].appendChild(subtitleItem);
+      subtitles[index].appendChild(subtitleItem2);
+    }
+  });
+
+  project.technologies.forEach((tag) => {
+    const techItem = document.createElement('li');
+    techItem.innerHTML = tag;
+    technologies[index].appendChild(techItem);
+  });
+
+  projectDetailsBtns[index].addEventListener('click', () => {
+    showProjectDetailsPopUp(project);
+  });
+});

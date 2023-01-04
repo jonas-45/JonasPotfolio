@@ -372,7 +372,6 @@ nav a {
     align-items: center;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-  
   }
 }
 
@@ -595,7 +594,6 @@ nav a {
 }
 
 @media screen and (min-width: 768px) {
-
   .card-categories .desktop-subtitle {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
@@ -1078,6 +1076,7 @@ nav a {
 .popup-button-line {
   display: block;
 }
+
 @media screen and (min-width: 768px) {
   .mobile-popup {
     width: 100%;
@@ -1138,7 +1137,8 @@ nav a {
 
 .card-image img {
   width: 100%;
-  /*height: 100%; */
+
+  /* height: 100%; */
 }
 
 @media screen and (min-width: 768px) {
@@ -1148,7 +1148,7 @@ nav a {
     max-height: 556px;
     border: 2px solid goldenrod;
   }
-  
+
   .work-description-container {
     display: flex;
     justify-content: space-between;
@@ -1169,7 +1169,7 @@ nav a {
 .popup-separator-line {
   width: 303px;
   margin-top: 20px;
-  border: 1px solid #EBECF0;
+  border: 1px solid #ebecf0;
 }
 
 .popup-top {
@@ -1218,7 +1218,7 @@ nav a {
   border: 1px solid #6070ff;
   border-radius: 8px;
   background-color: #fff;
-  color: #396DF2;
+  color: #396df2;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
