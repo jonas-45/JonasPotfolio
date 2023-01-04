@@ -87,3 +87,82 @@ ProjectsData.forEach((project,index) => {
   })
 
 });
+
+function showProjectDetailsPopUp(project_Data){
+  let body = document.querySelector("body");
+  let popup_window = document.querySelector(".mobile-popup");
+  let popup_card_image = document.querySelector(".card-image");
+  let popup_close = document.querySelector(".popup-close");
+
+  let popup_title = document.querySelector(".popup-title")
+  let popup_subtitles = document.querySelector(".popup-subtitles ul");
+  let popup_description = document.querySelector(".popup-description");
+  let popup_technologies = document.querySelector(".popup-technologies");
+  const seeLive = document.querySelector(".seelive-btn")
+  const seeSource = document.querySelector(".source-btn")
+
+  seeLive.addEventListener("click",function(){
+    alert("button clicked " + project_Data.title)
+  });
+
+  seeSource.addEventListener("click",function(){
+    alert("button clicked " + project_Data["description"])
+  });
+
+  //pop-up close button
+  popup_close.style.cursor = "pointer";
+  popup_close.addEventListener("click", function(){
+  popup_window.classList.remove("show-popup");
+  body.classList.remove("stop-scroll");
+  });
+
+  //reset image, subtitles and technology tags to empty
+  popup_technologies.innerHTML = "";
+  popup_card_image.innerHTML = "";
+  popup_subtitles.innerHTML = "";
+
+  //set pop-up project title
+  popup_title.innerHTML = project_Data["title"];
+
+  //set pop-up project description text
+  popup_description.innerHTML = project_Data["description"];
+
+  //Set popup subtitles
+  project_Data["subtitle"].forEach((tag,sub_index) => {
+    if(sub_index === project_Data["subtitle"].length - 1){
+      let p_subtitle_item = document.createElement("li");
+      p_subtitle_item.innerHTML = tag;
+  
+      popup_subtitles.appendChild(p_subtitle_item);
+    }else{
+      let p_subtitle_item = document.createElement("li");
+      p_subtitle_item.innerHTML = tag;
+
+      let p_subtitle_item2 = document.createElement("li");
+      let dot = document.createElement("img");
+      dot.src = dot_img;
+      p_subtitle_item2.appendChild(dot);
+  
+      popup_subtitles.appendChild(p_subtitle_item);
+      popup_subtitles.appendChild(p_subtitle_item2);
+    }
+    
+  });
+
+  //Set popup technology tags
+  project_Data["technologies"].forEach((tag) => {
+    let tag_item = document.createElement("li");
+    tag_item.innerHTML = tag;
+
+    popup_technologies.appendChild(tag_item);
+  });
+
+  //set pop-up card image
+  let card_image = document.createElement("img");
+  card_image.src = project_Data["imageUrl"];
+  popup_card_image.appendChild(card_image);
+  
+  //show the popup
+  body.classList.add("stop-scroll");
+  popup_window.classList.add("show-popup");
+}
