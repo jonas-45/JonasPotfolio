@@ -1334,8 +1334,9 @@ nav h2 {
 }
 
 .form-error p {
-  color: red;
+  color: white;
   font-weight: 400;
   font-family: "Poppins", sans-serif;
-  font-size: 15px;
+  font-size: 16px;
+  border: 1px dotted red;
 }
