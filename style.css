@@ -1302,3 +1302,33 @@ nav h2 {
   width: 18px;
   height: 20px;
 }
+
+.fab-container {
+  display: none;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  cursor: pointer;
+  z-index: 80;
+}
+
+.iconButton {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  box-shadow: 5px 5px 2px #444;
+}
+
+.button {
+  width: 60px;
+  height: 60px;
+  background: #a11692;
+}
+
+.iconButton i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: #fff;
+}

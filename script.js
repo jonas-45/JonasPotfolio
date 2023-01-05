@@ -49,3 +49,13 @@ function scrollDocumentToTop() {
 }
 
 fab.addEventListener('click', () => { scrollDocumentToTop(); });
+
+// Refresh page when resizing to desktop mode
+window.addEventListener('resize', () => {
+  // if (contentBody.clientWidth >= 992 && menuButton.classList.contains('active')) {
+  //   window.location.reload();
+  // }
+  if(window.innerWidth >= 768){
+    window.location.reload();
+  }
+});
