@@ -1,4 +1,4 @@
-const body = document.querySelector("body");
+const body = document.querySelector('body');
 const hamburgerIcon = document.querySelector('.mobile-menu-icon');
 const mobileMenuContainer = document.querySelector('.show-mobile-menu');
 const bodyContainer = document.querySelector('.container');
@@ -12,14 +12,14 @@ hamburgerIcon.addEventListener('click', () => {
   mobileMenuContainer.style.display = 'block';
   bodyContainer.style.filter = 'blur(7px)';
   bodyContainer.style.zIndex = -1;
-  body.style.overflowY = "hidden";
+  body.style.overflowY = 'hidden';
 });
 
 hideMobileMenu.addEventListener('click', () => {
   mobileMenuContainer.style.display = 'none';
   bodyContainer.style.filter = 'none';
   bodyContainer.style.zIndex = 2;
-  body.style.overflowY = "scroll";
+  body.style.overflowY = 'scroll';
 });
 
 menuArray.forEach((menu) => {
@@ -27,7 +27,7 @@ menuArray.forEach((menu) => {
     mobileMenuContainer.style.display = 'none';
     bodyContainer.style.filter = 'none';
     bodyContainer.style.zIndex = 2;
-    body.style.overflowY = "scroll";
+    body.style.overflowY = 'scroll';
   });
 });
 
@@ -55,7 +55,7 @@ window.addEventListener('resize', () => {
   // if (contentBody.clientWidth >= 992 && menuButton.classList.contains('active')) {
   //   window.location.reload();
   // }
-  if(window.innerWidth >= 768){
+  if (window.innerWidth >= 768) {
     window.location.reload();
   }
 });
