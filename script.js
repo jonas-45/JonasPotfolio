@@ -9,7 +9,7 @@ const menuArray = Array.from(mobileMenuItems);
 const fab = document.querySelector('.fab-container');
 
 hamburgerIcon.addEventListener('click', () => {
-  mobileMenuContainer.style.display = 'block';
+  mobileMenuContainer.style.display = 'flex';
   bodyContainer.style.filter = 'blur(7px)';
   bodyContainer.style.zIndex = -1;
   body.style.overflowY = 'hidden';

@@ -1233,7 +1233,7 @@ nav h2 {
 }
 
 .popup-separator-line {
-  width: 303px;
+  width: 100%;
   margin-top: 20px;
   border: 1px solid #ebecf0;
 }
@@ -1259,6 +1259,12 @@ nav h2 {
     justify-content: space-between;
     align-items: center;
   }
+
+  .popup-separator-line {
+    width: 303px;
+    margin-top: 20px;
+    border: 1px solid #ebecf0;
+  }
 }
 
 .popup-title {
@@ -1282,7 +1288,7 @@ nav h2 {
   align-items: center;
   padding: 12px 15px;
   margin: 20px 5px 10px 5px;
-  gap: 5px;
+  gap: 7px;
   justify-content: center;
   bottom: 4px;
   border: 1px solid #6070ff;

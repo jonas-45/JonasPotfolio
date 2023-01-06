@@ -300,9 +300,9 @@
               <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
 
               <form action="https://formspree.io/f/xdojqvpa" method="POST" id="form">
-                <input type="text" name="username" placeholder="Enter your name" class="input" maxlength="30" required /><br>
-                <input type="email" name="email" id="email" placeholder="Enter email address" class="input" maxlength="30" required /><br>
-                <textarea name="message" id="" cols="30" rows="10" placeholder="Write your message here" class="input textarea" maxlength="500" required></textarea>
+                <input type="text" name="username" id="username" placeholder="Enter your name" class="input" maxlength="30" onchange="addValuesToLocalStorage('name')" required /><br>
+                <input type="email" name="email" id="email" placeholder="Enter email address" class="input" maxlength="30" onchange="addValuesToLocalStorage('email')" required /><br>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Write your message here" class="input textarea" maxlength="500" onchange="addValuesToLocalStorage('msg')" required></textarea>
 
                 <div class="form-error"></div>
                 <input type="submit" value="Get In Touch" class="see-project-btn get-in-touch">
@@ -384,5 +384,6 @@
   <script src="script.js"></script>
   <script src="popUpScript.js"></script>
   <script src="formvalidation.js"></script>
+  <script src="localstorage.js"></script>
 </body>
 </html>
