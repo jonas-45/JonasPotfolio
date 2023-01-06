@@ -1,28 +1,4 @@
-// const visitorName = document.getElementById("username");
-// const visitorEmail = document.getElementById("email");
-// const visitorMsg = document.getElementById("message");
-
-//localStorage.clear();
 setFormInputValuesFromLocalStorage();
-
-// visitorName.addEventListener("change",addValuesToLocalStorage);
-// visitorEmail.addEventListener("change",addValuesToLocalStorage);
-// visitorMsg.addEventListener("change",addValuesToLocalStorage);
-
-// visitorName.addEventListener("onchange",() => {
-//   userData.name = visitorName.value;
-//   addValuesToLocalStorage(userData);
-// });
-
-// visitorEmail.addEventListener("onchange",() => {
-//   userData.email = visitorEmail.value;
-//   addValuesToLocalStorage(userData);
-// });
-
-// visitorMsg.addEventListener("onchange",() => {
-//   userData.msg = visitorMsg.value;
-//   addValuesToLocalStorage(userData);
-// });
 
 function storageAvailable(type) {
   let storage;

@@ -30,7 +30,7 @@ const ProjectsData = [
     title: 'Multi-Post Stories',
     subtitle: ['Canopy', 'Back End Dev', '2015'],
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    imageUrl: './images/card3.png',
+    imageUrl: './images/card4.png',
     technologies: ['html', 'css', 'javascript'],
     liveUrl: 'https://jonas-45.github.io/JonasPotfolio/',
     sourceUrl: 'https://github.com/jonas-45',
