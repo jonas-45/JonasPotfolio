@@ -49,16 +49,7 @@ function storageAvailable(type) {
   }
 }
 
-function setFormInputValuesFromLocalStorage(){
-  if(localStorage.getItem("userInfo")){
-    let udata = JSON.parse(localStorage.getItem("userInfo"));
-    console.log("User data: " + udata);
-
-    document.getElementById("username").value = udata.name;
-    document.getElementById("email").value = udata.email;
-    document.getElementById("message").value = udata.msg;
-  }
-}
+//Function to retrieve contact form values from local storage
 
 function addValuesToLocalStorage(inputType){
   let info = document.getElementById(inputType).value;
