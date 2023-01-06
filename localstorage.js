@@ -1,8 +1,8 @@
-const visitorName = document.getElementById("username");
-const visitorEmail = document.getElementById("email");
-const visitorMsg = document.getElementById("message");
-let userData = {};
+// const visitorName = document.getElementById("username");
+// const visitorEmail = document.getElementById("email");
+// const visitorMsg = document.getElementById("message");
 
+//localStorage.clear();
 setFormInputValuesFromLocalStorage();
 
 // visitorName.addEventListener("change",addValuesToLocalStorage);
@@ -51,24 +51,35 @@ function storageAvailable(type) {
 
 function setFormInputValuesFromLocalStorage(){
   if(localStorage.getItem("userInfo")){
-    userData = localStorage.getItem("userInfo");
+    let udata = JSON.parse(localStorage.getItem("userInfo"));
+    console.log("User data: " + udata);
 
-    visitorName.value = userData.name;
-    visitorEmail.value = userData.email;
-    visitorMsg.value = userData.msg;
+    document.getElementById("username").value = udata.name;
+    document.getElementById("email").value = udata.email;
+    document.getElementById("message").value = udata.msg;
   }
 }
 
 function addValuesToLocalStorage(inputType){
+  let info = document.getElementById(inputType).value;
+  console.log("INPUT VALUE: " + info);
   if(storageAvailable("localStorage")){
-    if(inputType === "name"){
-      userData.name = visitorName.value;
-    }else if(inputType == "email"){
-      userData.email = visitorEmail.value;
-    }else{
-      userData.msg = visitorMsg.value;
+    let data = {};
+    if(localStorage.getItem("userInfo")){
+      data = JSON.parse(localStorage.getItem("userInfo"));
     }
-
-    localStorage.setItem("userInfo",userData);
+    
+    console.log("Object keys: " + Object.keys(data));
+      if(inputType === "username"){
+        data['name'] = info;
+      }else if(inputType == "email"){
+        data.email = info;
+      }else{
+        data.msg = info;
+      }
+  
+      console.log("Info VALUE: " + typeof(data));
+      localStorage.setItem("userInfo",JSON.stringify(data));
+    
   }
 }
