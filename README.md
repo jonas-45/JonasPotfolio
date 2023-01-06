@@ -26,11 +26,12 @@
 
 # 📖 Portfolio Project <a name="about-project"></a>
 
-My Potfolio is a project aimed at sharpening the skills in developing a mobile screen responsive web applications. This Microverse task trains the developer to develop applications not only for desktop but also apps that can be viewed on even smaller screens with great user experience. This (<a href="https://www.loom.com/share/178a25875ce94fdc88ec80a83c7cb863"> link</a>) gives a video update of the project.
+My Potfolio is a project to show my skills and expertise as a to-be full stack developer. It contains projects I have worked on so far and the technologies I have implemented in developing these projects. This (<a href="https://www.loom.com/share/178a25875ce94fdc88ec80a83c7cb863"> link</a>) gives a video update of the project.
 
 ## 🛠 Built With <a name="built-with">Build With</a>
  >Html
  >Css
+ >Javascript
 
  ## 🚀 Live Demo <a name="live-demo"></a>
 
@@ -62,7 +63,6 @@ Visit the website using the link https://jonas-45.github.io/JonasPotfolio/
 <!--Future features -->
 ## Future features <a name="future-features"></a>
 .The contact form will be updated to accept user input and details will be sent to a database stored on a server.
-.forms and buttons will be updated to submit information to server
 
 <!-- AUTHORS -->
 
