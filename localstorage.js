@@ -54,3 +54,12 @@ function addValuesToLocalStorage(inputType) {
 }
 
 setFormInputValuesFromLocalStorage();
+document.getElementById('username').addEventListener('change', () => {
+  addValuesToLocalStorage('username');
+});
+document.getElementById('email').addEventListener('change', () => {
+  addValuesToLocalStorage('email');
+});
+document.getElementById('message').addEventListener('change', () => {
+  addValuesToLocalStorage('message');
+});
