@@ -10,9 +10,9 @@
 
     <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
+
   <div class="show-mobile-menu">
     <img class="mobile-status-bar" alt="status bar" src="./images/status-bar-dark.png">
     <img class="cancel-icon" src="./images/menu-cancel.png" alt="cancel mobile menu">
@@ -26,7 +26,7 @@
       <img src="./images/button-shape.png" alt="">
     </div>
   </div>
-
+  
     <div class="container">
       <header class="header">
         <div class="app-bar">
@@ -299,11 +299,12 @@
               <h3 class="title-text">Contact me</h3>
               <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
 
-              <form action="https://formspree.io/f/xdojqvpa" method="POST">
+              <form action="https://formspree.io/f/xdojqvpa" method="POST" id="form">
                 <input type="text" name="username" placeholder="Enter your name" class="input" maxlength="30" required /><br>
-                <input type="email" name="email" placeholder="Enter email address" class="input" maxlength="30" required /><br>
+                <input type="email" name="email" id="email" placeholder="Enter email address" class="input" maxlength="30" required /><br>
                 <textarea name="message" id="" cols="30" rows="10" placeholder="Write your message here" class="input textarea" maxlength="500" required></textarea>
 
+                <div class="form-error"></div>
                 <input type="submit" value="Get In Touch" class="see-project-btn get-in-touch">
 
               </form>
@@ -372,6 +373,16 @@
         
     </div>
     
+    <div class="fab-container">
+      <div class="button iconButton">
+        <i class="fa-solid fa-arrow-up"></i>
+      </div>
+    </div>
+      
+  </div>
+
+  <script src="script.js"></script>
   <script src="popUpScript.js"></script>
+  <script src="formvalidation.js"></script>
 </body>
 </html>
