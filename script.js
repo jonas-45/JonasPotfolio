@@ -3,7 +3,7 @@ const hamburgerIcon = document.querySelector('.mobile-menu-icon');
 const mobileMenuContainer = document.querySelector('.show-mobile-menu');
 const bodyContainer = document.querySelector('.container');
 const hideMobileMenu = document.querySelector('.cancel-icon');
-const mobileMenuItems = document.querySelectorAll('.mobile-menu-item');
+const mobileMenuItems = document.querySelector('.mobile-menu-item');
 const menuArray = Array.from(mobileMenuItems);
 
 const fab = document.querySelector('.fab-container');
