@@ -53,10 +53,10 @@ Vscode was used in developing this project but you can use any IDE that you are 
 ### Setup
 
 Get the repositor url from above and clone it to your desired folder using
- >git clone <repository url>
-### Usage
-
-Visit the website using the link https://jonas-45.github.io/JonasPotfolio/
+```bash
+  $ git clone https://github.com/jonas-45/JonasPotfolio.git
+  $ cd JonasPotfolio
+```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -68,7 +68,7 @@ Visit the website using the link https://jonas-45.github.io/JonasPotfolio/
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Author1**
+👤 **Wullah Jonas Nuta**
 
 - GitHub: [@jonas-45](https://github.com/jonas-45)
 - Twitter: [@jonaswullah](https://twitter.com/jonaswullah)
@@ -80,7 +80,7 @@ Visit the website using the link https://jonas-45.github.io/JonasPotfolio/
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the <a href="https://github.com/jonas-45/JonasPotfolio/issues"> [issues page]</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
