@@ -62,7 +62,8 @@ Get the repositor url from above and clone it to your desired folder using
 
 <!--Future features -->
 ## Future features <a name="future-features"></a>
-.The contact form will be updated to accept user input and details will be sent to a database stored on a server.
+-[ ] Contact form details will be persisted in a permanent storage using mongodb
+
 
 <!-- AUTHORS -->
 
@@ -95,7 +96,8 @@ If you like this project, give it a thumps up and follow me on Github for more e
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank the entire Microverse team for their unrelenting support and guidance.
+-[ ] I would like to thank the entire Microverse team for their unrelenting support and guidance.
+-[ ] A big thank you to @frempongdev, @coderacheal and @RitaDee for your enormous suggestions, reviews and registered issues which has gone a long way to making this project successful
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
