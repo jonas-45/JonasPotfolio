@@ -37,7 +37,7 @@ My Potfolio is a project to show my skills and expertise as a to-be full stack d
 
 > Please find below a link to the live demo of the project
 
-- [Live Demo Link](https://jonas-45.github.io/JonasPotfolio/)
+<a href="https://jonas-45.github.io/JonasPotfolio/">[Live Demo]</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
