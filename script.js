@@ -22,8 +22,10 @@ hideMobileMenu.addEventListener('click', () => {
   body.style.overflowY = 'scroll';
 });
 
+console.log("Menu array: " + menuArray);
 menuArray.forEach((menu) => {
   menu.addEventListener('click', () => {
+    
     mobileMenuContainer.style.display = 'none';
     bodyContainer.style.filter = 'none';
     bodyContainer.style.zIndex = 2;
