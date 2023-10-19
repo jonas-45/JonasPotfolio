@@ -90,6 +90,12 @@ body {
   padding-bottom: 20px;
 }
 
+#navbar {
+  position: sticky;
+  top: 0;
+  background-color: transparent;
+}
+
 nav a {
   cursor: pointer;
 }
@@ -140,7 +146,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 8% 60px 8%;
+  padding: 20px 8% 20px 8%;
 }
 
 .desktop-menu {
