@@ -51,6 +51,37 @@ function scrollDocumentToTop() {
 }
 
 fab.addEventListener('click', () => { scrollDocumentToTop(); });
+document.getElementById('languages-arrow').addEventListener('click', () => {
+  let div = document.getElementById('languages-list');
+  if(div.style.display == 'flex'){
+    document.getElementById('languages-arrow').src = 'images/right-arrow.png'
+    div.style.display = 'none';
+  }else{
+    document.getElementById('languages-arrow').src = 'images/down-arrow.png'
+    div.style.display = 'flex';
+  }
+});
+
+document.getElementById('frameworks-arrow').addEventListener('click', () => {
+  let div = document.getElementById('frameworks-list');
+  if(div.style.display == 'flex'){
+    document.getElementById('frameworks-arrow').src = 'images/right-arrow.png'
+    div.style.display = 'none';
+  }else{
+    document.getElementById('frameworks-arrow').src = 'images/down-arrow.png'
+    div.style.display = 'flex';
+  }
+});
+document.getElementById('skills-arrow').addEventListener('click', () => {
+  let div = document.getElementById('skills-list');
+  if(div.style.display == 'flex'){
+    document.getElementById('skills-arrow').src = 'images/right-arrow.png'
+    div.style.display = 'none';
+  }else{
+    document.getElementById('skills-arrow').src = 'images/down-arrow.png'
+    div.style.display = 'flex';
+  }
+});
 
 // Refresh page when resizing to desktop mode
 window.addEventListener('resize', () => {
